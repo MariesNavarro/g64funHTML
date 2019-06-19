@@ -25,9 +25,9 @@ function registrar_contacto(){
          success:function(data) {
            console.log(data);
            if (data!='success') {
-             $("#message").text("Ha ocurrido un error");
+             messSubmit(0);  
            } else {
-             $("#message").text("Los datos han sido enviados");
+             messSubmit(1);
              $("#name").val("");
              $("#email").val("");
              $("#coment").val("");
