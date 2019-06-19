@@ -9,6 +9,41 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
+	"/about.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/about.html",
+		"oF": 0
+		},
+	"/assets/demo.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/demo.mp4",
+		"oF": 0
+		},
+	"/assets/demo.webm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/demo.webm",
+		"oF": 0
+		},
+	"/bud-of-war.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/bud-of-war.html",
+		"oF": 0
+		},
 	"/css/fonts/avenir-black.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -103,12 +138,213 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/css/resetForm-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/resetForm-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/css/sections-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/sections-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/img/about-video.jpg": {
+		"ft": 16384,
+		"iS": 100494,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/about-video.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/black-texture.png": {
+		"ft": 32768,
+		"iS": 127,
+		"oA": 0,
+		"oAP": "/img/black-texture.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/clients/activision.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/activision.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/clients/bethesda.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/bethesda.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/clients/blizzard.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/blizzard.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/clients/budlight.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/budlight.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/clients/intel.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/intel.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/clients/squareenix.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/squareenix.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/clientsf.jpg": {
 		"ft": 16384,
 		"iS": 94768,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/clientsf.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/covers/about-cover-desktop.jpg": {
+		"ft": 16384,
+		"iS": 700591,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/covers/about-cover-desktop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/covers/about-cover-mobile.jpg": {
+		"ft": 16384,
+		"iS": 252658,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/covers/about-cover-mobile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/covers/pattern-1.jpg": {
+		"ft": 16384,
+		"iS": 72196,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/covers/pattern-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/covers/pattern-2.jpg": {
+		"ft": 16384,
+		"iS": 66757,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/covers/pattern-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/covers/pattern-3.jpg": {
+		"ft": 16384,
+		"iS": 84884,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/covers/pattern-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/covers/projects-cover-desktop.jpg": {
+		"ft": 16384,
+		"iS": 159989,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/covers/projects-cover-desktop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/covers/projects-cover-mobile.jpg": {
+		"ft": 16384,
+		"iS": 167682,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/covers/projects-cover-mobile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/covers/services-cover-desktop.jpg": {
+		"ft": 16384,
+		"iS": 429176,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/covers/services-cover-desktop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/covers/services-cover-mobile.jpg": {
+		"ft": 16384,
+		"iS": 172579,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/covers/services-cover-mobile.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -221,6 +457,112 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/gaming/0.gif": {
+		"ft": 4194304,
+		"iS": 1523971,
+		"oA": 0,
+		"oAP": "/img/gaming/0.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/img/gaming/0_old.gif": {
+		"ft": 4194304,
+		"iS": 2910182,
+		"oA": 0,
+		"oAP": "/img/gaming/0_old.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/img/gaming/1.gif": {
+		"ft": 4194304,
+		"iS": 1523971,
+		"oA": 0,
+		"oAP": "/img/gaming/1.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/img/gaming/1_old.gif": {
+		"ft": 4194304,
+		"iS": 1736840,
+		"oA": 0,
+		"oAP": "/img/gaming/1_old.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/img/gaming/2.gif": {
+		"ft": 4194304,
+		"iS": 1523971,
+		"oA": 0,
+		"oAP": "/img/gaming/2.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/img/gaming/2_old.gif": {
+		"ft": 4194304,
+		"iS": 976911,
+		"oA": 0,
+		"oAP": "/img/gaming/2_old.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/img/ic/outcome.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/ic/outcome.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/ic/point_1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/ic/point_1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/ic/point_2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/ic/point_2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/ic/point_3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/ic/point_3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/ic/point_4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/ic/point_4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/logotipo-g64.gif": {
+		"ft": 4194304,
+		"iS": 92968,
+		"oA": 0,
+		"oAP": "/img/logotipo-g64.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"/img/og/social_thumbnail_fb.jpg": {
 		"ft": 16384,
 		"iS": 11888,
@@ -234,10 +576,521 @@
 		},
 	"/img/og/social_thumbnail_tw.jpg": {
 		"ft": 16384,
-		"iS": 14924,
+		"iS": 21932,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/og/social_thumbnail_tw.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/poster-vid.jpg": {
+		"ft": 16384,
+		"iS": 147213,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/poster-vid.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/bemine/thumbnail.jpg": {
+		"ft": 16384,
+		"iS": 446562,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/bemine/thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/budofwar/thumbnail.jpg": {
+		"ft": 16384,
+		"iS": 463215,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/budofwar/thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/codwwii/thumbnail.jpg": {
+		"ft": 16384,
+		"iS": 263577,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/codwwii/thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/finalfantasyxv/thumbnail.jpg": {
+		"ft": 16384,
+		"iS": 165687,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/finalfantasyxv/thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/gamingnight/thumbnail.jpg": {
+		"ft": 16384,
+		"iS": 239401,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/gamingnight/thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/heartstones/thumbnail.jpg": {
+		"ft": 16384,
+		"iS": 339409,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/heartstones/thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/services/1-consulting.png": {
+		"ft": 32768,
+		"iS": 25583,
+		"oA": 0,
+		"oAP": "/img/services/1-consulting.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/services/2-pr.png": {
+		"ft": 32768,
+		"iS": 31445,
+		"oA": 0,
+		"oAP": "/img/services/2-pr.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/services/3-influencers.png": {
+		"ft": 32768,
+		"iS": 22821,
+		"oA": 0,
+		"oAP": "/img/services/3-influencers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/services/4-event.png": {
+		"ft": 32768,
+		"iS": 22440,
+		"oA": 0,
+		"oAP": "/img/services/4-event.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/services/5-media.png": {
+		"ft": 32768,
+		"iS": 22500,
+		"oA": 0,
+		"oAP": "/img/services/5-media.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/services/6-mobile.png": {
+		"ft": 32768,
+		"iS": 14156,
+		"oA": 0,
+		"oAP": "/img/services/6-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/services/apps.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/apps.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/services/consulting.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/consulting.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/services/event.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/event.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/services/influencers.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/influencers.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/services/media.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/media.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/services/pr.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/services/pr.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/sliderContact/0.jpg": {
+		"ft": 16384,
+		"iS": 134361,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/sliderContact/0.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/sliderContact/1.jpg": {
+		"ft": 16384,
+		"iS": 244936,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/sliderContact/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/sliderContact/2.jpg": {
+		"ft": 16384,
+		"iS": 310860,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/sliderContact/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/sliderContact/3.jpg": {
+		"ft": 16384,
+		"iS": 153344,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/sliderContact/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/desk/0.jpg": {
+		"ft": 16384,
+		"iS": 232592,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/desk/0.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/desk/1.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/desk/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/desk/2.jpg": {
+		"ft": 16384,
+		"iS": 115199,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/desk/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/desk/3.jpg": {
+		"ft": 16384,
+		"iS": 75055,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/desk/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/desk/4.jpg": {
+		"ft": 16384,
+		"iS": 83027,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/desk/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/desk/5.jpg": {
+		"ft": 16384,
+		"iS": 84274,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/desk/5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/mob/0.jpg": {
+		"ft": 16384,
+		"iS": 315301,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/mob/0.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/mob/1.jpg": {
+		"ft": 16384,
+		"iS": 139453,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/mob/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/mob/2.jpg": {
+		"ft": 16384,
+		"iS": 151909,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/mob/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/mob/3.jpg": {
+		"ft": 16384,
+		"iS": 209361,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/mob/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/mob/4.jpg": {
+		"ft": 16384,
+		"iS": 151696,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/mob/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/slidermobile/mob/5.jpg": {
+		"ft": 16384,
+		"iS": 97018,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/slidermobile/mob/5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/team/adriana-rangel.jpg": {
+		"ft": 16384,
+		"iS": 289360,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/team/adriana-rangel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/team/armando-ruiz.jpg": {
+		"ft": 16384,
+		"iS": 343876,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/team/armando-ruiz.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/team/carlos-galvez.jpg": {
+		"ft": 16384,
+		"iS": 400838,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/team/carlos-galvez.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/team/eduardo-ake.jpg": {
+		"ft": 16384,
+		"iS": 338843,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/team/eduardo-ake.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/team/gabo-sanchez.jpg": {
+		"ft": 16384,
+		"iS": 479603,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/team/gabo-sanchez.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/team/marcela-giraldo.jpg": {
+		"ft": 16384,
+		"iS": 256679,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/team/marcela-giraldo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/team/oscar-ordaz.jpg": {
+		"ft": 16384,
+		"iS": 366712,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/team/oscar-ordaz.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/white-texture.png": {
+		"ft": 32768,
+		"iS": 99,
+		"oA": 0,
+		"oAP": "/img/white-texture.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/workplace/0.jpg": {
+		"ft": 16384,
+		"iS": 2510525,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/workplace/0.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/workplace/1.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/workplace/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/workplace/2.jpg": {
+		"ft": 16384,
+		"iS": 523930,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/workplace/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/workplace/3.jpg": {
+		"ft": 16384,
+		"iS": 440617,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/workplace/3.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -250,6 +1103,36 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/js/bowser.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/bowser.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/debug.addIndicators.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/debug.addIndicators-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/home-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/home-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/main-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -259,6 +1142,58 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/js/ScrollMagic.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/ScrollMagic.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/typeit.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/typeit.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/projects.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/projects.html",
+		"oF": 0
+		},
+	"/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/services.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/services.html",
+		"oF": 0
 		}
 	},
 "hooks": [
