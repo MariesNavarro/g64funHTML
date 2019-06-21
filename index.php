@@ -176,7 +176,7 @@
               <a role="button" onmouseover="imagesMoveHome(event, 0)" onmouseout="imagesOutHome()" class="trans5" name="Gaming Experience"><span class="trans5"></span><?php echo __(" Gaming Experience", $lang);?></a>
               <span class="gamingExperience"><?php echo __(" has expanded to more aspects of the everyday lives: from competitive sports to full paid jobs. The public is focusing on", $lang);?></span>
               <a role="button" onmouseover="imagesMoveHome(event, 1)" onmouseout="imagesOutHome()" class="trans5" name="Gaming As A Lifestyle"><span class="trans5"></span><?php echo __(" Gaming As A Lifestyle",$lang);?></a>
-              <span class="gamingExperience"><?php echo __("  and we have adopted it, reshaped it to fit the", $lang);?></span>
+              <span class="gamingExperience"><?php echo __(" and we have adopted it, reshaped it to fit the", $lang);?></span>
               <a role="button" onmouseover="imagesMoveHome(event, 2)" onmouseout="imagesOutHome()" class="trans5" name="LATAM Audience"> <span class="trans5"></span><?php echo __(" LATAM Audience", $lang);?></a> <span class="gamingExperience"><?php echo __(" and to generate the best results in the region.", $lang);?></span>
             </p>
           </div>

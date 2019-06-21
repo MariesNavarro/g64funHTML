@@ -1428,6 +1428,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/home-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/home-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/main-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1526,7 +1536,7 @@
 "projectAttributes": {
 	"creationDate": 581267975.51609898,
 	"displayValue": "g64funHTML",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "/img/fav/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
 	},
