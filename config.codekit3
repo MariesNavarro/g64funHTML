@@ -1428,16 +1428,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/home-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/home-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/main-min.js": {
 		"ft": 64,
 		"ma": 0,
