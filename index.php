@@ -79,7 +79,7 @@
     						<a role="button" name="bullet 1 slider home" onclick="sliderHomeFun(0)">
                 <svg viewBox="0 0 30 30">
                   <path class="circleBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
-                  <circle cx="15" cy="15" r="3"/>
+                  <circle class="pointBullet" cx="15" cy="15" r="3"/>
                 </svg>
     						</a>
     					</li>
@@ -87,7 +87,7 @@
     						<a role="button" name="bullet 2 slider home" onclick="sliderHomeFun(1)">
                   <svg viewBox="0 0 30 30">
                     <path class="circleBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
-                    <circle cx="15" cy="15" r="3"/>
+                    <circle class="pointBullet" cx="15" cy="15" r="3"/>
                   </svg>
     						</a>
     					</li>
@@ -95,7 +95,7 @@
     						<a role="button" name="bullet 3 slider home" onclick="sliderHomeFun(2)">
                   <svg viewBox="0 0 30 30">
                     <path class="circleBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
-                    <circle cx="15" cy="15" r="3"/>
+                    <circle class="pointBullet" cx="15" cy="15" r="3"/>
                   </svg>
     						</a>
     					</li>
@@ -103,7 +103,7 @@
     						<a role="button" name="bullet 4 slider home" onclick="sliderHomeFun(3)">
                   <svg viewBox="0 0 30 30">
                     <path class="circleBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
-                    <circle cx="15" cy="15" r="3"/>
+                    <circle class="pointBullet" cx="15" cy="15" r="3"/>
                   </svg>
     						</a>
     					</li>
@@ -111,7 +111,7 @@
     						<a role="button" name="bullet 5 slider home" onclick="sliderHomeFun(4)">
                   <svg viewBox="0 0 30 30">
                     <path class="circleBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
-                    <circle cx="15" cy="15" r="3"/>
+                    <circle class="pointBullet" cx="15" cy="15" r="3"/>
                   </svg>
     						</a>
     					</li>
@@ -119,7 +119,7 @@
     						<a role="button" name="bullet 6 slider home" onclick="sliderHomeFun(5)">
                   <svg viewBox="0 0 30 30">
                     <path class="circleBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
-                    <circle cx="15" cy="15" r="3"/>
+                    <circle class="pointBullet" cx="15" cy="15" r="3"/>
                   </svg>
     						</a>
     					</li>
@@ -190,24 +190,42 @@
           <div class="gridServices">
             <ul class="rowClients displayFlex">
               <li id="anchorServices" class="trans5 clientSectionHomeOff">
-                <a href="#" title="<?php echo __("Consulting, strategizing, planning and research", $lang);?>" style="background-image:url('img/services/consulting.svg')"></a>
+                <a href="#" title="<?php echo __("Consulting, strategizing, planning and research", $lang);?>">
+                  <img src="img/services/consulting.svg" >
+                  <h5>Consulting, strategizing, planning and research</h5>
+                </a>
               </li>
               <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="<?php echo __("PR", $lang);?>" style="background-image:url('img/services/pr.svg')"></a>
+                <a href="#" title="<?php echo __("PR", $lang);?>">
+                  <img src="img/services/pr.svg">
+                  <h5>PR</h5>
+                </a>
               </li>
               <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="<?php echo __("Event production", $lang);?>" style="background-image:url('img/services/event.svg')"></a>
+                <a href="#" title="<?php echo __("Event production", $lang);?>">
+                  <img src="img/services/event.svg">
+                  <h5>Event Production</h5>
+                </a>
               </li>
             </ul>
             <ul class="rowClients displayFlex">
               <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="<?php echo __("Social media and influencers", $lang);?>" style="background-image:url('img/services/influencers.svg')"></a>
+                <a href="#" title="<?php echo __("Social media and influencers", $lang);?>">
+                  <img src="img/services/influencers.svg">
+                  <h5>Social Media and Influencers</h5>
+                </a>
               </li>
               <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="<?php echo __("Offiline and Online Media Buying and Optimization", $lang);?>" style="background-image:url('img/services/media.svg')"></a>
+                <a href="#" title="<?php echo __("Offiline and Online Media Buying and Optimization", $lang);?>">
+                  <img src="img/services/media.svg">
+                  <h5>Offline and Online Media Buying and Optimization</h5>
+                </a>
               </li>
               <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="<?php echo __("Websites and App Development", $lang);?>" style="background-image:url('img/services/apps.svg')"></a>
+                <a href="#" title="<?php echo __("Websites and App Development", $lang);?>">
+                  <img src="img/services/apps.svg">
+                  <h5>Websites and App Development</h5>
+                </a>
               </li>
             </ul>
           </div>
@@ -219,7 +237,7 @@
         <span class="blackTexture texture"></span>
         <div class="sectionMarginContact displayFlex">
           <div id="formWrap" class="displayFlex">
-            <h4><?php echo __("Say Hi. Don't be shy!", $lang);?></h4>
+            <h4 id="sayhi"></h4>
             <p><?php echo __("For a <b>strategy for the market in LATAM</b> or if you want to <b>work with the best video game studios</b>. <b>Feel free</b> to contact us anytime.", $lang);?></p>
             <form id="contactForm" action="" onsubmit="return false;">
               <div class="question displayFlex">
@@ -247,10 +265,39 @@
 
           </div>
 
-          <div id="sliderContact">
+          <div id="sliderContact" class="displayFlex">
             <ul>
-              <li style="background-image:url('img/workplace/0.jpg')"></li>
+              <li class="slideContact trans5" style="background-image:url('img/workplace/0.jpg'); opacity:1"></li>
+              <li class="slideContact trans5" style="background-image:url('img/workplace/1.jpg'); opacity:1"></li>
+              <li class="slideContact trans5" style="background-image:url('img/workplace/2.jpg'); opacity:1"></li>
+              <li class="slideContact trans5" style="background-image:url('img/workplace/3.jpg'); opacity:1"></li>
             </ul>
+            <div id="interfaceSliderContact" class="displayFlex">
+              <a role="button">
+                <svg viewBox="0 0 30 30">
+                  <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
+                  <circle class="pointBullet" cx="15" cy="15" r="3"/>
+                </svg>
+              </a>
+              <a role="button">
+                <svg viewBox="0 0 30 30">
+                  <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
+                  <circle class="pointBullet" cx="15" cy="15" r="3"/>
+                </svg>
+              </a>
+              <a role="button">
+                <svg viewBox="0 0 30 30">
+                  <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
+                  <circle class="pointBullet" cx="15" cy="15" r="3"/>
+                </svg>
+              </a>
+              <a role="button">
+                <svg viewBox="0 0 30 30">
+                  <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
+                  <circle class="pointBullet" cx="15" cy="15" r="3"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -265,26 +312,28 @@
 <script src="js/home-min.js" charset="utf-8"></script>
 <script src="js/backend.js" charset="utf-8"></script>
 <script>
-window.onload = function(){
-  var langMenu = _("#languageMenu"),
-      clientsHome = _("#clientsHome"),
-      servicesHome = _("#servicesHome");
-  if(checkMobile){
-      langMenu.style.display = "none";
-      clientsHome.setAttribute("class", " ");
-      servicesHome.setAttribute("class", " ");
-  }
-  wipesScroll();
-  homeTriggersLogo();
-  animationSectionsHome();
+  loadSeq();
+  window.onload = function(){
+    var langMenu = _("#languageMenu"),
+        clientsHome = _("#clientsHome"),
+        servicesHome = _("#servicesHome");
+    if(checkMobile){
+        langMenu.style.display = "none";
+        clientsHome.setAttribute("class", " ");
+        servicesHome.setAttribute("class", " ");
+    }
+    wipesScroll();
+    homeTriggersLogo();
+    animationSectionsHome();
 
-  sliderHomeFun(0);
-  scrollHomeCover();
-
-  setTimeout(function(){
-    panicLoad();
-  },3000);
-};
+    sliderHomeFun(0);
+    scrollHomeCover();
+    sliderContact();
+    setTimeout(function(){
+      panicLoad();
+      animateSeq();
+    },3000);
+  };
 </script>
 </body>
 </html>
