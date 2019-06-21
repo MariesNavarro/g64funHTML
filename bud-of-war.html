@@ -67,7 +67,7 @@ Date: 05-19
     </div>
     <main>
       <nav class="displayFlex">
-        <a id="logoNav" class="whiteLogo" href="#"></a>
+        <a id="logoNav" class="whiteLogo" href="#" onmouseover="hoverAnimate()"></a>
         <div class="displayFlex">
           <div id="languageMenu" class="displayFlex">
             <a href="#" class="trans3 whiteColor"><span>EN</span> <span class="trans5"></span></a>
@@ -188,6 +188,7 @@ Date: 05-19
     <script src="js/debug.addIndicators.js" charset="utf-8"></script>
     <script src="js/main-min.js" charset="utf-8"></script>
     <script>
+        loadSeq();
         function projectThumb(c, t){
           var img = t.children[0];
           if(c == "over"){
