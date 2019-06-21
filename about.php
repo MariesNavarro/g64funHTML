@@ -55,7 +55,7 @@
       <section id="jobAbout">
         <div class="marginAbout">
           <h4><?php echo __("Want To Join Our Team?", $lang);?></h4>
-          <p><?php echo __("", $lang);?>We are always glad to receive CV’s books and reels. Get in contact with us through.</p>
+          <p><?php echo __("We are always glad to receive CV’s books and reels. Get in contact with us through.", $lang);?></p>
           <a href="mailto:talento@g64.agency">talento@g64.agency</a>
         </div>
       </section>

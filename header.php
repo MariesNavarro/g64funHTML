@@ -14,6 +14,8 @@ Date: 05-19
   $listRoles =  getRoles($lang);
   /* Guardar el lenguaje en la página */
   echo '<input type="hidden" id="lang" name="lang" value='.$lang.'>';
+
+  $page = basename($_SERVER['PHP_SELF']);
 ?>
 
 <!DOCTYPE html>
@@ -83,11 +85,11 @@ Date: 05-19
         <a id="logoNav" class="whiteLogo" href="#" name="home"></a>
         <div class="displayFlex">
           <div id="languageMenu" class="displayFlex">
-            <a href="index.php?lang=EN" class="trans3 whiteColor" name="english"><span>EN</span> <span class="trans5"></span></a>
+            <a href="<?php echo $page?>?lang=EN" class="trans3 whiteColor" name="english"><span>EN</span> <span class="trans5"></span></a>
             <span class="trans3 whiteBack"></span>
-            <a href="index.php?lang=ES" class="trans3 whiteColor" name="spanish"><span>ES</span> <span class="trans5"></span></a>
+            <a href="<?php echo $page?>?lang=ES" class="trans3 whiteColor" name="spanish"><span>ES</span> <span class="trans5"></span></a>
             <span class="trans3 whiteBack"></span>
-            <a href="index.php?lang=PT" class="trans3 whiteColor" name="portuguese"><span>PT</span> <span class="trans5"></span></a>
+            <a href="<?php echo $page?>?lang=PT" class="trans3 whiteColor" name="portuguese"><span>PT</span> <span class="trans5"></span></a>
           </div>
           <a role="button" id="menuBtt" class="displayFlex" onclick="menu('open', this)" name="menu">
             <span class="trans5 whiteBack"></span>
