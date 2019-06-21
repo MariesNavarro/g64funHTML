@@ -82,7 +82,7 @@ Date: 05-19
     </div>
     <main>
       <nav class="displayFlex">
-        <a id="logoNav" class="whiteLogo" href="#" name="home"></a>
+        <a id="logoNav" class="whiteLogo" href="index.html" name="home" onmouseover="hoverAnimate()"></a>
         <div class="displayFlex">
           <div id="languageMenu" class="displayFlex">
             <a href="<?php echo $page?>?lang=EN" class="trans3 whiteColor" name="english"><span>EN</span> <span class="trans5"></span></a>
