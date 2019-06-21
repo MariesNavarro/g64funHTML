@@ -36,4 +36,21 @@ function getRoles($lang) {
   return $resultado;
 }
 
+/* Obtener lista de roles segin idioma */
+function getRolName($idRole) {
+  $link=connect();
+  $resultado = null;
+
+  $consulta = "SELECT nombre FROM g64_roles WHERE id = ".$idRole;
+
+  if ($registros = mysqli_query($link, $consulta)) {
+    while ($fila = mysqli_fetch_array($registros)) {
+        $resultado = $fila['nombre'];
+     }
+  }
+
+  Close($link);
+  return $resultado;
+}
+
 ?>

@@ -1,5 +1,6 @@
 <?php
   require_once('backend/lib/db.php');
+  require_once('backend/lib/funciones.php');
 
   /* Obtener parametros  */
   $accion   = $_POST['acc'];
@@ -12,16 +13,20 @@
   else {  $ip = $_SERVER['REMOTE_ADDR']; }
 
   switch ($accion) {
-    case 1:  /* registrar datos del formulario de contacto  */
+    case 1:  /* registrar y mandar email datos del formulario de contacto  */
         $nombre   = $_POST['nom'];
-        $role     = $_POST['rol'];
+        $idrole   = $_POST['rol'];
         $email    = $_POST['ema'];
         $coment   = $_POST['com'];
-        echo insertContacto($nombre,$role,$email,$coment,$ip);
+
+        $result = insertContacto($nombre,$idrole,$email,$coment,$ip);
+        $role   = getRolName($idrole);
+        send_email($nombre,$email,$role,$coment);
+        echo $result;
+
         break;
     default:
         echo "Sin parametros";
    }
-
 
 ?>

@@ -9,18 +9,19 @@ function send_email($nombre, $email,$role,$comentario) {
 			<meta charset="utf-8" />
 		</head>
 		<body style="margin:0 auto;">
-      <table style="width:100%;text-align:center;background:#1a3969;padding-bottom:30px;">
-        <tr><td  style="width:100%;height:100px;background:#1a3969;display:block;text-align:center; background-repeat: no-repeat; background-position: center; background-image:url(\'http://fun.siguesudando.com/mail/logo-mail.png\'); background-size: 200px 65px"></td></tr>
+      <table style="width:100%;text-align:center;background:#293376;padding-bottom:30px;">
+        <tr><td  style="width:100%;height:100px;background:#293376;display:block;text-align:left; background-repeat: no-repeat; background-position: center; background-image:url(\'https://g64.agency/desarrollo/sitio/img/g64-white.svg\'); background-size: 200px 65px"></td></tr>
         <tr><td  style="font-family:sans-serif;font-size:12px;margin:0;color:#ccc;padding:20px 0 5px 0;">NAME</td></tr>
         <tr><td  style="font-family:sans-serif;margin:0;color:#fff;padding:5px 0;">'.$nombre.' </td></tr>
         <tr><td  style="font-family:sans-serif;font-size:12px;margin:0;color:#ccc;padding:20px 0 5px 0;">ROLE</td></tr>
-        <tr><td  style="font-family:sans-serif;margin:0;color:#fff;padding:5px 0;">'.$email.' </td></tr>
-        <tr><td  style="font-family:sans-serif;font-size:12px;margin:0;color:#ccc;padding:20px 0 5px 0;">EMAIL</td></tr>
         <tr><td  style="font-family:sans-serif;margin:0;color:#fff;padding:5px 0;">'.$role.' </td></tr>
         <tr><td  style="font-family:sans-serif;font-size:12px;margin:0;color:#ccc;padding:20px 0 5px 0;">EMAIL</td></tr>
+        <tr><td  style="font-family:sans-serif;margin:0;color:#fff;padding:5px 0;">'.$email.' </td></tr>
+        <tr><td  style="font-family:sans-serif;font-size:12px;margin:0;color:#ccc;padding:20px 0 5px 0;">ASK WISLEY</td></tr>
         <tr><td  style="font-family:sans-serif;margin:0;color:#fff;padding:5px 0;">'.$comentario.' </td></tr>
       </table>
     </body></html>';
+
 
     //echo $texto_mail;
 

@@ -25,7 +25,7 @@ function registrar_contacto(){
          success:function(data) {
            console.log(data);
            if (data!='success') {
-             messSubmit(0);  
+             messSubmit(0);
            } else {
              messSubmit(1);
              $("#name").val("");
