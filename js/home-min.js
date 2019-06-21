@@ -500,42 +500,50 @@ function elementsContact(c){
   }
 }
 
-var cSliderContact = 0;
-function sliderContact(){
-  var slides = __(".slideContact"),
-      circle = __(".bulletContact");
+var cSliderContact = 0,
+    slides = __(".slideContact"),
+    circle = __(".bulletContact");
+function sliderContactCount(){
   setInterval(function(){
     cSliderContact++;
     if(cSliderContact > 3) cSliderContact = 0;
-    switch (cSliderContact) {
-      case 0:
-        resetAll();
-        slides[0].style.opacity = "1";
-        circle[0].style.strokeDashoffset = 0;
-      break;
-      case 1:
-        resetAll();
-        slides[1].style.opacity = "1";
-        circle[1].style.strokeDashoffset = 0;
-      break;
-      case 2:
-        resetAll();
-        slides[2].style.opacity = "1";
-        circle[2].style.strokeDashoffset = 0;
-      break;
-      case 3:
-        resetAll();
-        slides[3].style.opacity = "1";
-        circle[3].style.strokeDashoffset = 0;
-      break;
-    }
+      sliderContact(cSliderContact);
   },4000);
+}
 
-  function resetAll(){
-    for (var i = 0; i < slides.length; i++) {
-      slides[i].style.opacity = "0";
-      circle[i].setAttribute("class", "circleBullet bulletContact");
-      circle[i].style.strokeDashoffset = 76.39474487304688;
-    }
+function resetAll(){
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = "0";
+    circle[i].setAttribute("class", "circleBullet bulletContact");
+    circle[i].style.strokeDashoffset = 76.39474487304688;
+  }
+}
+
+function sliderContact(n){
+  switch (n) {
+    case 0:
+      resetAll();
+      slides[0].style.opacity = "1";
+      circle[0].style.strokeDashoffset = 0;
+      cSliderContact = 0;
+    break;
+    case 1:
+      resetAll();
+      slides[1].style.opacity = "1";
+      circle[1].style.strokeDashoffset = 0;
+      cSliderContact = 1;
+    break;
+    case 2:
+      resetAll();
+      slides[2].style.opacity = "1";
+      circle[2].style.strokeDashoffset = 0;
+      cSliderContact = 2;
+    break;
+    case 3:
+      resetAll();
+      slides[3].style.opacity = "1";
+      circle[3].style.strokeDashoffset = 0;
+      cSliderContact = 3;
+    break;
   }
 }

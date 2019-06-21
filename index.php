@@ -273,25 +273,25 @@
               <li class="slideContact trans5" style="background-image:url('img/workplace/3.jpg'); opacity:1"></li>
             </ul>
             <div id="interfaceSliderContact" class="displayFlex">
-              <a role="button">
+              <a role="button" onclick="sliderContact(0)">
                 <svg viewBox="0 0 30 30">
                   <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
                   <circle class="pointBullet" cx="15" cy="15" r="3"/>
                 </svg>
               </a>
-              <a role="button">
+              <a role="button" onclick="sliderContact(1)">
                 <svg viewBox="0 0 30 30">
                   <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
                   <circle class="pointBullet" cx="15" cy="15" r="3"/>
                 </svg>
               </a>
-              <a role="button">
+              <a role="button" onclick="sliderContact(2)">
                 <svg viewBox="0 0 30 30">
                   <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
                   <circle class="pointBullet" cx="15" cy="15" r="3"/>
                 </svg>
               </a>
-              <a role="button">
+              <a role="button" onclick="sliderContact(3)">
                 <svg viewBox="0 0 30 30">
                   <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
                   <circle class="pointBullet" cx="15" cy="15" r="3"/>
@@ -328,7 +328,7 @@
 
     sliderHomeFun(0);
     scrollHomeCover();
-    sliderContact();
+    sliderContactCount();
     setTimeout(function(){
       panicLoad();
       animateSeq();
