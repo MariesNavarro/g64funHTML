@@ -52,6 +52,21 @@ $texts = array(
     'Ask Wisely'=> 'Comentario',
     'Submit'=> 'Enviar',
 
+    // about
+    'The LATAM'=> 'El latino',
+    'Rulebook'=> 'Libro de reglas',
+    'The <b>need of recognition</b> is a key driver in the region.'=> 'La <b> necesidad de reconocimiento </b> es un factor clave en la región.',
+    'The <b>LATAM</b> fans are extremely <b>loyal to the franchise</b>.'=> 'Los fanáticos de <b> LATAM </b> son extremadamente <b> leales a la franquicia </b>.',
+    'The players in <b>LATAM</b> think twice before <b>buying a game</b>.'=> 'Los jugadores en <b> LATAM </b> piensan dos veces antes de <b> comprar un juego </b>.',
+    '<b>Regional/local</b> influencers & social media are crucial.'=> 'Los influenciadores <b> regionales / locales </b> y las redes sociales son cruciales.',
+    'This Is Us'=> 'Somos nosotros',
+    'A team creating <b>great work</b> for <b>extraordinary brands</b> and <b>audiences</b>.'=> 'Un equipo que crea <b> gran trabajo </b> para <b> marcas extraordinarias </b> y <b> audiencias </b>.',
+    ''=> '',
+    ''=> '',
+    ''=> '',
+    ''=> '',
+
+
     // footer
     'Sitemap'=>'Mapa del sitio',
     'Our Family'=> 'Nuestra familia',
