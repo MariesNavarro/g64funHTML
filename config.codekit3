@@ -23,6 +23,13 @@
 		"oAP": "/about.html",
 		"oF": 0
 		},
+	"/about.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/about.php",
+		"oF": 0
+		},
 	"/assets/demo.mp4": {
 		"cB": 0,
 		"ft": 8192,
@@ -35,6 +42,27 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/assets/demo.webm",
+		"oF": 0
+		},
+	"/backend/lib/conexion.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/backend/lib/conexion.php",
+		"oF": 0
+		},
+	"/backend/lib/db.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/backend/lib/db.php",
+		"oF": 0
+		},
+	"/backend/lib/funciones.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/backend/lib/funciones.php",
 		"oF": 0
 		},
 	"/bud-of-war.html": {
@@ -128,6 +156,16 @@
 		"oAP": "/css/fonts/merriweather.woff2",
 		"oF": 0
 		},
+	"/css/master-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/master-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/css/resetForm-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -147,6 +185,20 @@
 		"oAP": "/css/sections-min-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/footer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/footer.php",
+		"oF": 0
+		},
+	"/header.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/header.php",
+		"oF": 0
 		},
 	"/img/about-video.jpg": {
 		"ft": 16384,
@@ -652,6 +704,259 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/seqLogo/0.png": {
+		"ft": 32768,
+		"iS": 3183,
+		"oA": 0,
+		"oAP": "/img/seqLogo/0.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/1.png": {
+		"ft": 32768,
+		"iS": 3183,
+		"oA": 0,
+		"oAP": "/img/seqLogo/1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/10.png": {
+		"ft": 32768,
+		"iS": 2292,
+		"oA": 0,
+		"oAP": "/img/seqLogo/10.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/11.png": {
+		"ft": 32768,
+		"iS": 2271,
+		"oA": 0,
+		"oAP": "/img/seqLogo/11.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/12.png": {
+		"ft": 32768,
+		"iS": 1680,
+		"oA": 0,
+		"oAP": "/img/seqLogo/12.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/13.png": {
+		"ft": 32768,
+		"iS": 1654,
+		"oA": 0,
+		"oAP": "/img/seqLogo/13.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/14.png": {
+		"ft": 32768,
+		"iS": 1675,
+		"oA": 0,
+		"oAP": "/img/seqLogo/14.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/15.png": {
+		"ft": 32768,
+		"iS": 1769,
+		"oA": 0,
+		"oAP": "/img/seqLogo/15.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/16.png": {
+		"ft": 32768,
+		"iS": 1836,
+		"oA": 0,
+		"oAP": "/img/seqLogo/16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/17.png": {
+		"ft": 32768,
+		"iS": 1836,
+		"oA": 0,
+		"oAP": "/img/seqLogo/17.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/18.png": {
+		"ft": 32768,
+		"iS": 1768,
+		"oA": 0,
+		"oAP": "/img/seqLogo/18.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/19.png": {
+		"ft": 32768,
+		"iS": 2142,
+		"oA": 0,
+		"oAP": "/img/seqLogo/19.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/2.png": {
+		"ft": 32768,
+		"iS": 3202,
+		"oA": 0,
+		"oAP": "/img/seqLogo/2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/20.png": {
+		"ft": 32768,
+		"iS": 2254,
+		"oA": 0,
+		"oAP": "/img/seqLogo/20.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/21.png": {
+		"ft": 32768,
+		"iS": 1479,
+		"oA": 0,
+		"oAP": "/img/seqLogo/21.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/22.png": {
+		"ft": 32768,
+		"iS": 140,
+		"oA": 0,
+		"oAP": "/img/seqLogo/22.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/3.png": {
+		"ft": 32768,
+		"iS": 3151,
+		"oA": 0,
+		"oAP": "/img/seqLogo/3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/4.png": {
+		"ft": 32768,
+		"iS": 2960,
+		"oA": 0,
+		"oAP": "/img/seqLogo/4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/5.png": {
+		"ft": 32768,
+		"iS": 2633,
+		"oA": 0,
+		"oAP": "/img/seqLogo/5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/6.png": {
+		"ft": 32768,
+		"iS": 2352,
+		"oA": 0,
+		"oAP": "/img/seqLogo/6.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/7.png": {
+		"ft": 32768,
+		"iS": 2352,
+		"oA": 0,
+		"oAP": "/img/seqLogo/7.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/8.png": {
+		"ft": 32768,
+		"iS": 2285,
+		"oA": 0,
+		"oAP": "/img/seqLogo/8.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/seqLogo/9.png": {
+		"ft": 32768,
+		"iS": 2430,
+		"oA": 0,
+		"oAP": "/img/seqLogo/9.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/services/1-consulting.png": {
 		"ft": 32768,
 		"iS": 25583,
@@ -1086,12 +1391,22 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/index.html": {
+	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/index.html",
+		"oAP": "/index.php",
 		"oF": 0
+		},
+	"/js/backend.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/backend-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/js/bowser.min.js": {
 		"ft": 64,
@@ -1153,6 +1468,27 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/lang/es.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/lang/es.php",
+		"oF": 0
+		},
+	"/lang/languages.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/lang/languages.php",
+		"oF": 0
+		},
+	"/lang/pt.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/lang/pt.php",
+		"oF": 0
+		},
 	"/projects.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1178,6 +1514,13 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/respuesta.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/respuesta.php",
+		"oF": 0
+		},
 	"/services.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1193,13 +1536,13 @@
 "projectAttributes": {
 	"creationDate": 581267975.51609898,
 	"displayValue": "g64funHTML",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "/img/fav/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerEnableIEGrid": 0,
@@ -2600,7 +2943,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost:8888",
+	"externalServerAddress": "http://localhost",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
