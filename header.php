@@ -114,19 +114,19 @@ Date: 05-19
           <ul id="menuIndex">
             <li class="displayFlex menuLinkOff">
               <p>01</p>
-              <a href="index.php" name="home link"><h3><?php echo __("Home", $lang);?></h3></a>
+              <a href="index.php?lang=<?php echo $lang ?>" name="home link"><h3><?php echo __("Home", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>02</p>
-              <a href="about.php" name="about link"><h3><?php echo __("About Us", $lang);?></h3></a>
+              <a href="about.php?lang=<?php echo $lang ?>" name="about link"><h3><?php echo __("About Us", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>03</p>
-              <a href="projects.html" name="portafolio link"><h3><?php echo __("Portfolio", $lang);?></h3></a>
+              <a href="projects.php?lang=<?php echo $lang ?>" name="portafolio link"><h3><?php echo __("Portfolio", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>04</p>
-              <a href="services.html" name="services link"><h3><?php echo __("Sevices", $lang);?></h3></a>
+              <a href="services.html?lang=<?php echo $lang ?>" name="services link"><h3><?php echo __("Sevices", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>05</p>

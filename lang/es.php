@@ -63,9 +63,13 @@ $texts = array(
     'A team creating <b>great work</b> for <b>extraordinary brands</b> and <b>audiences</b>.'=> 'Un equipo que crea <b> gran trabajo </b> para <b> marcas extraordinarias </b> y <b> audiencias </b>.',
     'Want To Join Our Team?'=> '¿Quieres unirte a nuestro equipo?',
     'We are always glad to receive CV’s books and reels. Get in contact with us through.'=> 'Siempre estamos contentos de recibir libros y carretes de CV. Ponte en contacto con nosotros a través de.',
-    ''=> '',
-    ''=> '',
 
+    // Portafolio
+    'A Controller <br> For Everyone'=> 'Un controlador <br> para todos',
+    'Client'=> 'Cliente',
+    'Year'=> 'Año',
+    'Service'=> 'Servicio',
+    
 
     // footer
     'Sitemap'=>'Mapa del sitio',
