@@ -348,6 +348,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/covers/press-cover-desktop.png": {
+		"ft": 32768,
+		"iS": 1502573,
+		"oA": 0,
+		"oAP": "/img/covers/press-cover-desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/covers/press-cover-mobile.png": {
+		"ft": 32768,
+		"iS": 1138842,
+		"oA": 0,
+		"oAP": "/img/covers/press-cover-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/covers/projects-cover-desktop.jpg": {
 		"ft": 16384,
 		"iS": 408817,

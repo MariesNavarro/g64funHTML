@@ -80,6 +80,9 @@ Date: 05-19
     <div id="loading" class="displayFlex trans5">
       <img src="img/logotipo-g64.gif" alt="Logotipo G64 animado" width="80" height="76">
     </div>
+    <div id="closePress" class="trans5" onclick="pressRoom('close')">
+      <span class="trans5"></span><span class="trans5"></span>
+    </div>
     <main>
       <nav class="displayFlex">
         <a id="logoNav" class="whiteLogo" href="index.html" name="home" onmouseover="hoverAnimate()"></a>
@@ -130,7 +133,7 @@ Date: 05-19
             </li>
             <li class="displayFlex menuLinkOff">
               <p>05</p>
-              <a href="#" name="press room link"><h3><h3><?php echo __("Press Room", $lang);?></h3></a>
+              <a role="button" name="press room link" onclick="pressRoom('open')"><h3><h3><?php echo __("Press Room", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>06</p>
