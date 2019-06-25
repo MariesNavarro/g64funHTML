@@ -176,16 +176,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/css/sections-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/sections-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -666,6 +656,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/projects/bemine/thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/budofwar/01.jpg": {
+		"ft": 16384,
+		"iS": 2351494,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/budofwar/01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/budofwar/02.jpg": {
+		"ft": 16384,
+		"iS": 4079922,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/budofwar/02.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

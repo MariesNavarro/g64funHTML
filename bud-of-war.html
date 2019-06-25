@@ -153,8 +153,38 @@ Date: 05-19
           </div>
         </div>
 
-        <div id="sliderProject"></div>
-        <div id="sliderInterface"></div>
+        <div id="sliderProject">
+          <div style="background-image:url('img/projects/budofwar/01.jpg')"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div id="sliderInterface" class="displayFlex">
+          <a href="">
+            <svg viewBox="0 0 30 30">
+              <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
+              <circle class="pointBullet" cx="15" cy="15" r="3"/>
+            </svg>
+          </a>
+          <a href="">
+            <svg viewBox="0 0 30 30">
+              <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
+              <circle class="pointBullet" cx="15" cy="15" r="3"/>
+            </svg>
+          </a>
+          <a href="">
+            <svg viewBox="0 0 30 30">
+              <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
+              <circle class="pointBullet" cx="15" cy="15" r="3"/>
+            </svg>
+          </a>
+          <a href="">
+            <svg viewBox="0 0 30 30">
+              <path class="circleBullet bulletContact transBullet" d="M15,3c6.6,0,12,5.4,12,12s-5.4,12-12,12S3,21.6,3,15C3,8.5,8.1,3.2,14.6,3L16,3"/>
+              <circle class="pointBullet" cx="15" cy="15" r="3"/>
+            </svg>
+          </a>
+        </div>
       </div> <!-- margin -->
     </div>
     <div class="projectSection panel">
@@ -171,14 +201,22 @@ Date: 05-19
             </p>
           </div>
         </div>
-        <div id="videoProject"></div>
+        <div id="videoProject">
+          <div style="background-image:url('img/projects/budofwar/02.jpg')"></div>
+        </div>
       </div>
     </div>
     <div id="insideGallery" class="panel">
-      <ul class="rowProject">
-        <li style="background:red"></li>
-        <li style="background:blue"></li>
-        <li style="background:orange"></li>
+      <ul class="rowProject displayFlex">
+        <li style="background-image:url('img/projects/bemine/thumbnail.jpg')"></li>
+        <li style="background-image:url('img/projects/codwwii/thumbnail.jpg')"></li>
+        <li style="background-image:url('img/projects/finalfantasyxv/thumbnail.jpg')"></li>
+      </ul>
+
+      <ul class="rowProject displayFlex">
+        <li style="background-image:url('img/projects/gamingnight/thumbnail.jpg')"></li>
+        <li style="background-image:url('img/projects/heartstones/thumbnail.jpg')"></li>
+        <!-- <li style="background:orange"></li> -->
       </ul>
     </div>
   </div>
@@ -187,6 +225,7 @@ Date: 05-19
     <script src="js/debug.addIndicators.js" charset="utf-8"></script>
     <script src="js/main-min.js" charset="utf-8"></script>
     <script>
+      changeColorMenu("purple");
         loadSeq();
         function projectThumb(c, t){
           var img = t.children[0];
