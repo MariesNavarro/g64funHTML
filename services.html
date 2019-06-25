@@ -66,7 +66,7 @@ Date: 05-19
     </div>
     <main>
       <nav class="displayFlex">
-        <a id="logoNav" class="whiteLogo" href="#"></a>
+        <a id="logoNav" class="whiteLogo" href="#" onmouseover="hoverAnimate()"></a>
         <div class="displayFlex">
           <div id="languageMenu" class="displayFlex">
             <a href="#" class="trans3 whiteColor"><span>EN</span> <span class="trans5"></span></a>
@@ -104,7 +104,7 @@ Date: 05-19
             </li>
             <li class="displayFlex menuLinkOff">
               <p>05</p>
-              <a role="button"><h3>Press Room</h3></a>
+              <a role="button" onclick="pressRoom('close')"><h3>Press Room</h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>06</p>
@@ -118,7 +118,6 @@ Date: 05-19
               <a href="https://vimeo.com/user85719236" target="_blank"><b>Vimeo</b></a>
               <a href="https://www.facebook.com/pages/G64/1489576167830724" target="_blank"><b>Facebook</b></a>
               <a href="https://twitter.com/g64agency" target="_blank"><b>Twitter</b></a>
-              <a href="tel:+5215575906384"><b>+52 (1) 55 7590-6384</b></a>
               <a href="mailto:info@g64.agency" ><b>info@g64.agency</b></a>
               <a href="#" target="_blank"><span>Cookies and Privacy Policy</span></a>
           </div>
@@ -234,7 +233,6 @@ Date: 05-19
 <span class="whiteTexture texture"></span>
 <div class="marginWidth">
   <ul class="contactMobile">
-    <li><a href="tel:5575906384">+52 (1) 55 7590-6384</a></li>
     <li><a href="mailto:info@g64.agency">info@g64.agency</a></li>
     <li><a href="mailto:ventas@g64.agency">ventas@g64.agency</a></li>
     <li><a href="mailto:talento@g64.agency">talento@g64.agency</a></li>
@@ -303,9 +301,6 @@ Date: 05-19
     <ul>
       <h4>Contact</h4>
       <li>
-        <a href="tel:+5215575906384">+52 (1) 55 7590-6384</a>
-      </li>
-      <li>
         <a href="mailto:info@g64.agency">info@g64.agency</a>
       </li>
       <li>
@@ -327,6 +322,7 @@ Date: 05-19
     <script src="js/debug.addIndicators.js" charset="utf-8"></script>
     <script src="js/main-min.js" charset="utf-8"></script>
     <script>
+      loadSeq();
         window.onload = function(){
           var langMenu = _("#languageMenu");
           if(checkMobile){

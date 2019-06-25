@@ -176,16 +176,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/css/sections-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/sections-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -295,7 +285,7 @@
 		},
 	"/img/covers/about-cover-desktop.jpg": {
 		"ft": 16384,
-		"iS": 700591,
+		"iS": 1419119,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/covers/about-cover-desktop.jpg",
@@ -306,7 +296,7 @@
 		},
 	"/img/covers/about-cover-mobile.jpg": {
 		"ft": 16384,
-		"iS": 252658,
+		"iS": 643768,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/covers/about-cover-mobile.jpg",
@@ -348,9 +338,31 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/covers/press-cover-desktop.png": {
+		"ft": 32768,
+		"iS": 1502573,
+		"oA": 0,
+		"oAP": "/img/covers/press-cover-desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/covers/press-cover-mobile.png": {
+		"ft": 32768,
+		"iS": 1138842,
+		"oA": 0,
+		"oAP": "/img/covers/press-cover-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/covers/projects-cover-desktop.jpg": {
 		"ft": 16384,
-		"iS": 159989,
+		"iS": 408817,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/covers/projects-cover-desktop.jpg",
@@ -361,7 +373,7 @@
 		},
 	"/img/covers/projects-cover-mobile.jpg": {
 		"ft": 16384,
-		"iS": 167682,
+		"iS": 452070,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/covers/projects-cover-mobile.jpg",
@@ -372,7 +384,7 @@
 		},
 	"/img/covers/services-cover-desktop.jpg": {
 		"ft": 16384,
-		"iS": 429176,
+		"iS": 860667,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/covers/services-cover-desktop.jpg",
@@ -383,7 +395,7 @@
 		},
 	"/img/covers/services-cover-mobile.jpg": {
 		"ft": 16384,
-		"iS": 172579,
+		"iS": 482840,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/covers/services-cover-mobile.jpg",
@@ -644,6 +656,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/projects/bemine/thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/budofwar/01.jpg": {
+		"ft": 16384,
+		"iS": 2351494,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/budofwar/01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/projects/budofwar/02.jpg": {
+		"ft": 16384,
+		"iS": 4079922,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/budofwar/02.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1424,6 +1458,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/debug.addIndicators-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/home-min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/home-min-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

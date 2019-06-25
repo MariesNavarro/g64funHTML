@@ -80,9 +80,12 @@ Date: 05-19
     <div id="loading" class="displayFlex trans5">
       <img src="img/logotipo-g64.gif" alt="Logotipo G64 animado" width="80" height="76">
     </div>
+    <div id="closePress" class="trans5" onclick="pressRoom('close')">
+      <span class="trans5"></span><span class="trans5"></span>
+    </div>
     <main>
       <nav class="displayFlex">
-        <a id="logoNav" class="whiteLogo" href="#" name="home"></a>
+        <a id="logoNav" class="whiteLogo" href="index.html" name="home" onmouseover="hoverAnimate()"></a>
         <div class="displayFlex">
           <div id="languageMenu" class="displayFlex">
             <a href="<?php echo $page?>?lang=EN" class="trans3 whiteColor" name="english"><span>EN</span> <span class="trans5"></span></a>
@@ -130,7 +133,7 @@ Date: 05-19
             </li>
             <li class="displayFlex menuLinkOff">
               <p>05</p>
-              <a href="#" name="press room link"><h3><h3><?php echo __("Press Room", $lang);?></h3></a>
+              <a role="button" name="press room link" onclick="pressRoom('open')"><h3><h3><?php echo __("Press Room", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>06</p>
@@ -144,7 +147,6 @@ Date: 05-19
               <a href="#" target="_blank" name="vimeo g64"><b>Vimeo</b></a>
               <a href="#" target="_blank" name="facebook g64"><b>Facebook</b></a>
               <a href="#" target="_blank" name="twitter g64"><b>Twitter</b></a>
-              <a href="#" name="phone number g64"><b>+52 (1) 55 7590-6384</b></a>
               <a href="" name="mail info g64"><b>info@g64.agency</b></a>
               <a href="" name="cookies and privacy policy" target="_blank"><span><?php echo __("Cookies and Privacy Policy", $lang);?></span></a>
           </div>
