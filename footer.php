@@ -2,7 +2,6 @@
   <span class="whiteTexture texture"></span>
   <div class="marginWidth">
     <ul class="contactMobile">
-      <li><a href="tel:5575906384">+52 (1) 55 7590-6384</a></li>
       <li><a href="mailto:info@g64.agency">info@g64.agency</a></li>
       <li><a href="mailto:ventas@g64.agency">ventas@g64.agency</a></li>
       <li><a href="mailto:talento@g64.agency">talento@g64.agency</a></li>
@@ -44,7 +43,6 @@
       <!-- 5 Columna Policy -->
       <ul>
         <h4><?php echo __("Contact", $lang);?></h4>
-        <li><a href="tel:+5215575906384">+52 (1) 55 7590-6384</a></li>
         <li><a href="mailto:info@g64.agency">info@g64.agency</a></li>
         <li><a href="mailto:ventas@g64.agency">ventas@g64.agency</a></li>
         <li><a href="mailto:talento@g64.agency">talento@g64.agency</a></li>

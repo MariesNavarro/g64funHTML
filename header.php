@@ -144,7 +144,6 @@ Date: 05-19
               <a href="#" target="_blank" name="vimeo g64"><b>Vimeo</b></a>
               <a href="#" target="_blank" name="facebook g64"><b>Facebook</b></a>
               <a href="#" target="_blank" name="twitter g64"><b>Twitter</b></a>
-              <a href="#" name="phone number g64"><b>+52 (1) 55 7590-6384</b></a>
               <a href="" name="mail info g64"><b>info@g64.agency</b></a>
               <a href="" name="cookies and privacy policy" target="_blank"><span><?php echo __("Cookies and Privacy Policy", $lang);?></span></a>
           </div>
