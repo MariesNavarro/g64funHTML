@@ -66,16 +66,25 @@ $texts = array(
 
     // Portafolio
     'A Controller <br> For Everyone'=> 'Un controlador <br> para todos',
-    'Client'=> 'Cliente',
+    '(All Clients)'=> '(Todos los Clientes)',
+    '(All Years)'=> '(Todos los Años)',
+    '(All Services)'=> '(Todos los Servicios)',
+    '(All)'=> '(Todos)',
+
+    // proyecto
+    'The Challenge'=>'El reto',
+    'The Outcome'=>'El resultado',
     'Year'=> 'Año',
     'Service'=> 'Servicio',
-    
 
     // footer
     'Sitemap'=>'Mapa del sitio',
     'Our Family'=> 'Nuestra familia',
     'Policy'=> 'Política',
     'All Rights Reserved'=>'Todos los derechos reservados',
+
+    // varios
+    'for'=> 'por',
 
     ''=> ''
 );

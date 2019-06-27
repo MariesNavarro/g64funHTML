@@ -4,6 +4,11 @@
   $background = "#1e1338";
 ?>
 <?php include 'header.php'; ?>
+<?php
+  /* Obtener datos */
+  $listRoles      =  getRoles($lang);
+  $listClientes   =  getClientes('I'); // Orden por indice
+?>
 
       <section id="homeCover" class="panel">
         <span class="whiteTexture texture"></span>
@@ -139,6 +144,19 @@
           <h4 id="clientsTitle"><span style="opacity:0; translateY(100px)"><?php echo __("Clients", $lang);?></span></h4>
           <p id="clientsText" style="opacity:0; translateY(100px)"><?php echo __("We are proud to partner with the <b>greatest</b> in the industry, together we build <b>campaigns that get results</b>.", $lang);?></p>
           <div class="gridClients">
+
+            <?php
+              $i = 0;
+              foreach ($listClientes as $item) {
+                if (($i % 3) == 0) { echo "<ul class=\"rowClients displayFlex\">" ; }
+                echo "<li id=\"anchorClients\" class=\"trans5 clientSectionHomeOff\">
+                        <a href=\"#\" title=\"".$item['nombre']."\" style=\"background-image:url('".$item['url']."')\" name=\"".$item['nombre']."\"></a>
+                    </li>";
+                if (($i % 3) == 2 || (sizeof($listClientes)-1 == $i) ) { echo "</ul>";}
+                $i++;
+              }
+            ?>
+            <!--
             <ul class="rowClients displayFlex">
               <li id="anchorClients" class="trans5 clientSectionHomeOff">
                 <a href="#" title="Bud Light" style="background-image:url('img/clients/budlight.svg')" name="Client Bud Light"></a>
@@ -161,6 +179,7 @@
                 <a href="#" title="Blizzard" style="background-image:url('img/clients/blizzard.svg')" name="Client Blizzard"></a>
               </li>
             </ul>
+          -->
           </div>
         </div>
       </section>
@@ -247,7 +266,7 @@
               <div class="question displayFlex">
                 <label for=""><b><?php echo __("Choose Your Role", $lang);?></b></label>
                 <select  id="roleList">
-                    <?php echo $listRoles; ?>
+                    <?php foreach ($listRoles as $item) {  echo "<option value='".$item['id']."'>".$item['nombre']."</option>"; } ?>
                 </select>
               </div>
               <div class="question displayFlex">

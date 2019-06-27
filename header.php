@@ -10,8 +10,13 @@ Date: 05-19
 
   /* Obtener parametros  */
   if (isset($_GET['lang'])) { $lang = $_GET['lang']; } else { $lang = 'EN'; /* por defecto en Ingles */}
-  /* Obtener listas */
-  $listRoles =  getRoles($lang);
+  if (isset($_GET['idpro'])) { $idproyecto = $_GET['idpro']; } else { $idproyecto = 1; /* por defecto proyecto 1 */}
+  if (isset($_GET['idcli'])) { $idcliente = $_GET['idcli']; } else { $idcliente = 0; /* por defecto cliente todos */}
+  if (isset($_GET['year'])) { $year = $_GET['year']; } else { $year = 0; /* por defecto años todos */}
+  if (isset($_GET['idcat'])) { $idcategoria = $_GET['idcat']; } else { $idcategoria = 0; /* por defecto $idcategoria todos */}
+
+  //echo 'l='.$lang.' p='.$idproyecto,' c='.$idcliente,' y='.$year.' s='.$idcategoria;
+
   /* Guardar el lenguaje en la página */
   echo '<input type="hidden" id="lang" name="lang" value='.$lang.'>';
 

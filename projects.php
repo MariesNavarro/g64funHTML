@@ -4,6 +4,13 @@
   $background = "#FFF";
 ?>
 <?php include 'header.php'; ?>
+<?php
+  /* Obtener datos */
+  $listClientes   =  getClientes('Alfa'); // Orden alfabeticamente
+  $listYears      =  getYears();
+  $listCategorias =  getCategorias($lang);
+  $listProyectos  =  getproyectos($lang,$idcliente,$year,$idcategoria);
+?>
 
       <section id="projectsCover" class="backImg backBottom">
         <span class="whiteTexture texture"></span>
@@ -16,54 +23,42 @@
 
           <form action="" class="displayFlex">
 
-            <select name="" id="">
-              <option value=""><?php echo __("Client", $lang);?></option>
+            <select name="" id="lstClient">
+              <option value="0"><?php echo __("(All Clients)", $lang);?></option>
+                <?php foreach ($listClientes as $item) {
+                  if ($idcliente==$item['id']) {
+                    echo "<option value='".$item['id']."' selected>".$item['nombre']."</option>";
+                  } else {
+                    echo "<option value='".$item['id']."'>".$item['nombre']."</option>";
+                  }
+                } ?>
             </select>
 
-            <select name="" id="">
-              <option value=""><?php echo __("Year", $lang);?></option>
+            <select name="" id="lstYear">
+              <option value="0"><?php echo __("(All Years)", $lang);?></option>
+                <?php foreach ($listYears as $item) {  echo "<option value='".$item['year']."'>".$item['year']."</option>"; } ?>
             </select>
 
-            <select name="" id="">
-              <option value=""><?php echo __("Service", $lang);?></option>
+            <select name="" id="lstService">
+              <option value="0"><?php echo __("(All Services)", $lang);?></option>
+                <?php foreach ($listCategorias as $item) {  echo "<option value='".$item['id']."'>".$item['nombre']."</option>"; } ?>
             </select>
           </form>
-
-          <ul class="rowProjects displayFlex">
-            <li onmouseover="projectThumb('over', this,999)" onmouseout="projectThumb('out', this,999)" onclick="projectThumb('click', this,999)">
-              <div class="thumbnail trans5 greyscaleFull" style="background-image:url('img/projects/heartstones/thumbnail.jpg')"></div>
-              <div class="thumbnailColor trans5"></div>
-              <p class="highlight highWhitePurpleBlue"><b>Heartstones</b> for Blizzard</p>
-            </li>
-            <li onmouseover="projectThumb('over', this)" onmouseout="projectThumb('out', this)">
-              <div class="thumbnail trans5 greyscaleFull" style="background-image:url('img/projects/gamingnight/thumbnail.jpg')"></div>
-              <div class="thumbnailColor trans5"></div>
-              <p class="highlight highWhitePurpleBlue"><b>Gaming Night</b> for Intel</p>
-            </li>
-            <li onmouseover="projectThumb('over', this)" onmouseout="projectThumb('out', this)">
-              <div class="thumbnail trans5 greyscaleFull" style="background-image:url('img/projects/finalfantasyxv/thumbnail.jpg')"></div>
-              <div class="thumbnailColor trans5"></div>
-              <p class="highlight highWhitePurpleBlue"><b>FFXV</b> for Square Enix</p>
-            </li>
-          </ul>
-
-          <ul class="rowProjects displayFlex">
-            <li onmouseover="projectThumb('over', this)" onmouseout="projectThumb('out', this)">
-              <div class="thumbnail trans5 greyscaleFull" style="background-image:url('img/projects/codwwii/thumbnail.jpg')"></div>
-              <div class="thumbnailColor trans5"></div>
-              <p class="highlight highWhitePurpleBlue"><b>COD WWII</b> for Activision</p>
-            </li>
-            <li onmouseover="projectThumb('over', this)" onmouseout="projectThumb('out', this)">
-              <div class="thumbnail trans5 greyscaleFull" style="background-image:url('img/projects/budofwar/thumbnail.jpg')"></div>
-              <div class="thumbnailColor trans5"></div>
-              <p class="highlight highWhitePurpleBlue"><b>Bud Of War</b> for Bud Light</p>
-            </li>
-            <li onmouseover="projectThumb('over', this)" onmouseout="projectThumb('out', this)">
-              <div class="thumbnail trans5 greyscaleFull" style="background-image:url('img/projects/bemine/thumbnail.jpg')"></div>
-              <div class="thumbnailColor trans5"></div>
-              <p class="highlight highWhitePurpleBlue"><b>Be Mine</b> for Bethesda</p>
-            </li>
-          </ul>
+          <?php
+              $i = 0;
+              foreach ($listProyectos as $item) {
+                if (($i % 3) == 0) { echo "<ul class=\"rowProjects displayFlex\">" ; }
+                echo "<li onmouseover=\"projectThumb('over', this)\" onmouseout=\"projectThumb('out', this)\">
+                      <a href=\"project.php?lang=".$lang."&idpro=".$item['id']."\">
+                        <div class=\"thumbnail trans5 greyscaleFull\" style=\"background-image:url('".$item['thumbnail']."')\"></div>
+                        <div class=\"thumbnailColor trans5\"></div>
+                        <p class=\"highlight highWhitePurpleBlue\"><b>".$item['nombre']."</b> ".__("for", $lang)." ".$item['cliente']."</p>
+                      </a>
+                    </li>";
+                if (($i % 3) == 2 || (sizeof($listProyectos)-1 == $i) ) { echo "</ul>";}
+                $i++;
+              }
+          ?>
         </div>
       </section>
 
@@ -74,18 +69,15 @@
     <script src="js/ScrollMagic.min.js" charset="utf-8"></script>
     <script src="js/debug.addIndicators.js" charset="utf-8"></script>
     <script src="js/main-min.js" charset="utf-8"></script>
+    <script src="js/backend.js" charset="utf-8"></script>
     <script>
-        function projectThumb(c, t, id){
-          var img = t.children[0];
+        function projectThumb(c, t){
+          var img = t.children[0].children[0];
           if(c == "over"){
             img.setAttribute("class", "thumbnail trans5 greyscaleNone");
           }
           if(c == "out"){
             img.setAttribute("class", "thumbnail trans5 greyscaleFull");
-          }
-          if(c == "click"){
-            window.location.href='project.php?id='+id;
-          //  window.location.href='bud-of-war.html';
           }
         }
         window.onload = function(){
@@ -97,14 +89,7 @@
              panicLoad();
            },1000);
           wipesScroll();
-
-          ratioGallery("#sliderProject");
-          ratioGallery("#videoProject");
         }
-        window.onresize = function(){
-          ratioGallery("#sliderProject");
-          ratioGallery("#videoProject");
-        };
     </script>
   </body>
 </html>

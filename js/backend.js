@@ -7,6 +7,21 @@ $(document).ready(function () {
       registrar_contacto();
     });
 
+    $('#lstClient').on("change", function (e) {
+      var lang = $("#lang").val();
+      var cli = $("#lstClient option:selected").val();
+      location.href='projects.php?lang='+lang+'&idcli='+cli;
+    });
+
+    $('#lstYear').on("change", function (e) {
+
+    });
+
+    $('#lstService').on("change", function (e) {
+
+    });
+
+
 });   // fin ready
 
 

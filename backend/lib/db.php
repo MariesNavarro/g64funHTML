@@ -19,16 +19,16 @@ function insertContacto($nombre,$idrole,$email,$coment,$ip) {
   return $result;
 }
 
-/* Obtener lista de roles segin idioma */
+/* Obtener lista de roles segun idioma */
 function getRoles($lang) {
-  $link=connect();
-  $resultado = null;
+  $link      = connect();
+  $resultado = array();
 
   $consulta = "SELECT id,nombre FROM g64_roles WHERE idioma = '".$lang."' ORDER BY orden";
 
   if ($registros = mysqli_query($link, $consulta)) {
     while ($fila = mysqli_fetch_array($registros)) {
-        $resultado .= "<option value='".$fila['id']."'>".$fila['nombre']."</option>";
+        $resultado[] = $fila;
      }
   }
 
@@ -50,6 +50,154 @@ function getRolName($idRole) {
   }
 
   Close($link);
+  return $resultado;
+}
+
+function getClientes($orden) {
+  $link      = connect();
+  $resultado = array();
+
+  if ($orden=='Alfa') { // alfabeticamente
+      $consulta = "SELECT id,nombre,url FROM g64_clientes WHERE activo = 'S' ORDER BY nombre";
+  } else {
+      $consulta = "SELECT id,nombre,url FROM g64_clientes WHERE activo = 'S' ORDER BY orden";
+  }
+
+  if ($registros = mysqli_query($link, $consulta)) {
+    while ($fila = mysqli_fetch_array($registros)) {
+        $resultado[] = $fila;
+     }
+  }
+
+  Close($link);
+  return $resultado;
+}
+
+function getYears() {
+  $link      = connect();
+  $resultado = array();
+
+  $consulta = "SELECT distinct year FROM g64_proyectos  ORDER BY year";
+
+  if ($registros = mysqli_query($link, $consulta)) {
+    while ($fila = mysqli_fetch_array($registros)) {
+        $resultado[] = $fila;
+     }
+  }
+
+  Close($link);
+  return $resultado;
+}
+
+function getCategorias($lang) {
+  $link      = connect();
+  $resultado = array();
+
+  $consulta = "SELECT id,nombre FROM g64_categorias  WHERE idioma = '".$lang."' ORDER BY orden";
+
+  if ($registros = mysqli_query($link, $consulta)) {
+    while ($fila = mysqli_fetch_array($registros)) {
+        $resultado[] = $fila;
+     }
+  }
+
+  Close($link);
+  return $resultado;
+}
+
+function getproyectos($lang,$idcliente,$year,$idcategoria) {
+  $link      = connect();
+  $resultado = array();
+
+  $consulta = "SELECT a.id,b.nombre, a.year, e.nombre categoria, c.nombre cliente, d.url thumbnail
+     FROM g64_proyectos a
+LEFT JOIN g64_proyectos_txt b ON a.id = b.idproyecto
+LEFT JOIN g64_clientes c ON a.idcliente = c.id
+LEFT JOIN g64_proyectos_img d ON a.id = d.idproyecto
+LEFT JOIN g64_categorias e ON e.id = b.idcategoria
+    WHERE b.idioma = '".$lang."'
+      AND d.seccion = 'TH'
+      AND a.activo = 'S'";
+  if ($idcliente > 0) {  $consulta .="AND c.id =".$idcliente;  }
+  $consulta .=" ORDER BY a.orden";
+
+  if ($registros = mysqli_query($link, $consulta)) {
+    while ($fila = mysqli_fetch_array($registros)) {
+        $resultado[] = $fila;
+     }
+  }
+
+  Close($link);
+  return $resultado;
+}
+
+function getproyectosExcluir($lang,$idproyecto) {
+  $link      = connect();
+  $resultado = array();
+
+  $consulta = "SELECT  a.idproyecto id,a.url thumbnail
+     FROM g64_proyectos_img a
+    WHERE a.seccion = 'TH'
+      AND a.activo = 'S'
+      AND a.idproyecto != $idproyecto
+ ORDER BY a.idproyecto";
+
+  if ($registros = mysqli_query($link, $consulta)) {
+    while ($fila = mysqli_fetch_array($registros)) {
+        $resultado[] = $fila;
+     }
+  }
+
+  Close($link);
+  return $resultado;
+}
+
+function getproyecto($lang,$idproyecto) {
+  $resultado = null;
+
+  if ($idproyecto>0) {
+      $link      = connect();
+      $consulta = "SELECT a.id,b.nombre, b.descripcion, b.resultado, a.year, e.nombre categoria, c.nombre cliente, d.url
+         FROM g64_proyectos a
+    LEFT JOIN g64_proyectos_txt b ON a.id = b.idproyecto
+    LEFT JOIN g64_clientes c ON a.idcliente = c.id
+    LEFT JOIN g64_proyectos_img d ON a.id = d.idproyecto
+    LEFT JOIN g64_categorias e ON e.id = b.idcategoria
+        WHERE b.idioma = '".$lang."'
+          AND d.seccion = 'PO'
+          AND a.id = ".$idproyecto."
+          AND a.activo = 'S'
+     ORDER BY a.orden";
+
+      if ($registros = mysqli_query($link, $consulta)) {
+        while ($fila = mysqli_fetch_array($registros)) {
+            $resultado = $fila;
+         }
+      }
+      Close($link);
+ }
+  return $resultado;
+}
+
+function getproyectoSlider($lang,$idproyecto) {
+    $resultado = array();
+
+  if ($idproyecto>0) {
+      $link      = connect();
+      $consulta = "SELECT a.url
+                   FROM g64_proyectos_img a
+                  WHERE a.idproyecto = ".$idproyecto."
+                    AND a.seccion = 'SL'
+                    AND a.Activo = 'S'
+               ORDER BY a.orden";
+
+      if ($registros = mysqli_query($link, $consulta)) {
+        while ($fila = mysqli_fetch_array($registros)) {
+            $resultado[] = $fila;
+         }
+      }
+      Close($link);
+ }
   return $resultado;
 }
 
