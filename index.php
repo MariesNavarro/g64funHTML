@@ -8,6 +8,7 @@
   /* Obtener datos */
   $listRoles      =  getRoles($lang);
   $listClientes   =  getClientes('I'); // Orden por indice
+  $listServicios  =  getServicios($lang);
 ?>
 
       <section id="homeCover" class="panel">
@@ -144,7 +145,6 @@
           <h4 id="clientsTitle"><span style="opacity:0; translateY(100px)"><?php echo __("Clients", $lang);?></span></h4>
           <p id="clientsText" style="opacity:0; translateY(100px)"><?php echo __("We are proud to partner with the <b>greatest</b> in the industry, together we build <b>campaigns that get results</b>.", $lang);?></p>
           <div class="gridClients">
-
             <?php
               $i = 0;
               foreach ($listClientes as $item) {
@@ -154,32 +154,7 @@
                     </li>";
                 if (($i % 3) == 2 || (sizeof($listClientes)-1 == $i) ) { echo "</ul>";}
                 $i++;
-              }
-            ?>
-            <!--
-            <ul class="rowClients displayFlex">
-              <li id="anchorClients" class="trans5 clientSectionHomeOff">
-                <a href="#" title="Bud Light" style="background-image:url('img/clients/budlight.svg')" name="Client Bud Light"></a>
-              </li>
-              <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="Intel" style="background-image:url('img/clients/intel.svg')" name="Client Intel"></a>
-              </li>
-              <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="Bethesda" style="background-image:url('img/clients/bethesda.svg')" name="Client Bethesda"></a>
-              </li>
-            </ul>
-            <ul class="rowClients displayFlex">
-              <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="Square Enix" style="background-image:url('img/clients/squareenix.svg')" name="Client Square Enix"></a>
-              </li>
-              <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="Activision" style="background-image:url('img/clients/activision.svg')" name="Client Activision"></a>
-              </li>
-              <li class="trans5 clientSectionHomeOff">
-                <a href="#" title="Blizzard" style="background-image:url('img/clients/blizzard.svg')" name="Client Blizzard"></a>
-              </li>
-            </ul>
-          -->
+              } ?>
           </div>
         </div>
       </section>
@@ -207,6 +182,21 @@
           <h4 id="servicesTitle"><span style="opacity:0; translateY(100px)"><?php echo __("Services", $lang);?></span></h4>
           <p id="servicesText" style="opacity:0; translateY(100px)"><?php echo __("Our goal is to deliver amazing experiences that connect with the <b>LATAM audience</b> and <b>build strategic value for brands</b>.", $lang);?></p>
           <div class="gridServices">
+            <?php
+                $i = 0;
+                foreach ($listServicios as $item) {
+                  if (($i % 3) == 0) { echo "<ul class=\"rowClients displayFlex\">" ; }
+                  echo "<li id=\"anchorServices\" class=\"trans5 clientSectionHomeOff\">
+                        <a href=\"#\" title =\"".$item['nombre']."\">
+                          <img src=\"".$item['thumbnail']."\" >
+                          <h5>".$item['nombre']."</h5>
+                        </a>
+                      </li>";
+                  if (($i % 3) == 2 || (sizeof($listServicios)-1 == $i) ) { echo "</ul>";}
+                  $i++;
+                }
+            ?>
+            <!--
             <ul class="rowClients displayFlex">
               <li id="anchorServices" class="trans5 clientSectionHomeOff">
                 <a href="#" title="<?php echo __("Consulting, strategizing, planning and research", $lang);?>">
@@ -247,6 +237,7 @@
                 </a>
               </li>
             </ul>
+            -->
           </div>
         </div>
       </section>
@@ -257,6 +248,7 @@
         <div class="sectionMarginContact displayFlex">
           <div id="formWrap" class="displayFlex">
             <h4 id="sayhi"></h4>
+            <input type="hidden" id="strSayhi" value='<?php echo __("Say Hi. Don’t be shy!", $lang);?>'>
             <p><?php echo __("For a <b>strategy for the market in LATAM</b> or if you want to <b>work with the best video game studios</b>. <b>Feel free</b> to contact us anytime.", $lang);?></p>
             <form id="contactForm" action="" onsubmit="return false;">
               <div class="question displayFlex">

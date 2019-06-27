@@ -36,12 +36,24 @@
 
             <select name="" id="lstYear">
               <option value="0"><?php echo __("(All Years)", $lang);?></option>
-                <?php foreach ($listYears as $item) {  echo "<option value='".$item['year']."'>".$item['year']."</option>"; } ?>
+                <?php foreach ($listYears as $item) {
+                  if ($year==$item['year']) {
+                    echo "<option value='".$item['year']."' selected>".$item['year']."</option>";
+                  } else {
+                    echo "<option value='".$item['year']."'>".$item['year']."</option>";
+                  }
+                } ?>
             </select>
 
             <select name="" id="lstService">
               <option value="0"><?php echo __("(All Services)", $lang);?></option>
-                <?php foreach ($listCategorias as $item) {  echo "<option value='".$item['id']."'>".$item['nombre']."</option>"; } ?>
+                <?php foreach ($listCategorias as $item) {
+                  if ($idcategoria==$item['id']) {
+                    echo "<option value='".$item['id']."' selected>".$item['nombre']."</option>";
+                  } else {
+                    echo "<option value='".$item['id']."'>".$item['nombre']."</option>";
+                  }
+                } ?>
             </select>
           </form>
           <?php

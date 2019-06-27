@@ -134,7 +134,7 @@ Date: 05-19
             </li>
             <li class="displayFlex menuLinkOff">
               <p>04</p>
-              <a href="services.html?lang=<?php echo $lang ?>" name="services link"><h3><?php echo __("Sevices", $lang);?></h3></a>
+              <a href="services.php?lang=<?php echo $lang ?>" name="services link"><h3><?php echo __("Sevices", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>05</p>

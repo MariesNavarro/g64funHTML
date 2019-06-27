@@ -9,16 +9,20 @@ $(document).ready(function () {
 
     $('#lstClient').on("change", function (e) {
       var lang = $("#lang").val();
-      var cli = $("#lstClient option:selected").val();
-      location.href='projects.php?lang='+lang+'&idcli='+cli;
+      var idcli = $("#lstClient option:selected").val();
+      location.href='projects.php?lang='+lang+'&idcli='+idcli;
     });
 
     $('#lstYear').on("change", function (e) {
-
+      var lang = $("#lang").val();
+      var year = $("#lstYear option:selected").val();
+      location.href='projects.php?lang='+lang+'&year='+year;
     });
 
     $('#lstService').on("change", function (e) {
-
+      var lang = $("#lang").val();
+      var idcat = $("#lstService option:selected").val();
+      location.href='projects.php?lang='+lang+'&idcat='+idcat;
     });
 
 

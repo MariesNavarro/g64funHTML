@@ -4,6 +4,7 @@ var strServ3 = $("#strServ3").val();
 var strServ4 = $("#strServ4").val();
 var strServ5 = $("#strServ5").val();
 var strServ6 = $("#strServ6").val();
+var strSayhi = $("#strSayhi").val();
 
 var speedType = 60,
     pathLenght = 76.39474487304688,
@@ -457,7 +458,7 @@ function animationSectionsHome(){
 }
 
 var sayhi = new TypeIt("#sayhi", {
-  strings: "Say Hi. Don't Be Shy!",
+  strings: strSayhi, //"Say Hi. Don't Be Shy!",
   cursor: false,
   speed: 60,
   afterComplete: function(){

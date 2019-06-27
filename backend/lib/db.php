@@ -105,6 +105,22 @@ function getCategorias($lang) {
   return $resultado;
 }
 
+function getServicios($lang) {
+  $link      = connect();
+  $resultado = array();
+
+  $consulta = "SELECT id,nombre,descripcion,url,thumbnail,orden FROM g64_servicios  WHERE idioma = '".$lang."' and Activo = 'S' ORDER BY orden";
+
+  if ($registros = mysqli_query($link, $consulta)) {
+    while ($fila = mysqli_fetch_array($registros)) {
+        $resultado[] = $fila;
+     }
+  }
+
+  Close($link);
+  return $resultado;
+}
+
 function getproyectos($lang,$idcliente,$year,$idcategoria) {
   $link      = connect();
   $resultado = array();
@@ -119,6 +135,8 @@ LEFT JOIN g64_categorias e ON e.id = b.idcategoria
       AND d.seccion = 'TH'
       AND a.activo = 'S'";
   if ($idcliente > 0) {  $consulta .="AND c.id =".$idcliente;  }
+  if ($year > 0) {  $consulta .="AND a.year=".$year;  }
+  if ($idcategoria > 0) {  $consulta .="AND b.idcategoria=".$idcategoria;  }
   $consulta .=" ORDER BY a.orden";
 
   if ($registros = mysqli_query($link, $consulta)) {

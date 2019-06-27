@@ -33,18 +33,18 @@ $texts = array(
     ' LATAM Audience'=> ' Audiencia latinoamericana',
     ' and to generate the best results in the region.'=>' y generar los mejores resultados en la región.',
 
-    // Servicios
-    'Services'=> 'Servicios',
-    'Our goal is to deliver amazing experiences that connect with the <b>LATAM audience</b> and <b>build strategic value for brands</b>.'=> 'Nuestro objetivo es ofrecer experiencias asombrosas que conecten con la <b> audiencia LATAM </b> y <b> construyan valor estratégico para las marcas </b>.',
-    'Consulting, strategizing, planning and research'=>'Consultoría, estrategia, planificación e investigación.',
-    'PR'=> 'Relaciones públicas',
-    'Event production'=> 'Producción de eventos',
-    'Social media and influencers'=> 'Redes sociales y personas influyentes.',
-    'Offiline and Online Media Buying and Optimization'=> 'Compra y optimización de medios offline y online',
-    'Websites and App Development'=> 'Sitios web y desarrollo de aplicaciones',
+    // Servicios -> se maneja por BD
+    //'Services'=> 'Servicios',
+    //'Our goal is to deliver amazing experiences that connect with the <b>LATAM audience</b> and <b>build strategic value for brands</b>.'=> 'Nuestro objetivo es ofrecer experiencias asombrosas que conecten con la <b> audiencia LATAM </b> y <b> construyan valor estratégico para las marcas </b>.',
+    //'Consulting, strategizing, planning and research'=>'Consultoría, estrategia, planificación e investigación.',
+    //'PR'=> 'Relaciones públicas',
+    //'Event production'=> 'Producción de eventos',
+    //'Social media and influencers'=> 'Redes sociales y personas influyentes.',
+    //'Offiline and Online Media Buying and Optimization'=> 'Compra y optimización de medios offline y online',
+    //'Websites and App Development'=> 'Sitios web y desarrollo de aplicaciones',
 
     // Formulario de Contacto
-    'Say Hi. Don\'t be shy!'=> 'Di hola. ¡No seas tímido!',
+    'Say Hi. Don’t be shy!'=> 'Di hola. ¡No seas tímido!',
     'For a <b>strategy for the market in LATAM</b> or if you want to <b>work with the best video game studios</b>. <b>Feel free</b> to contact us anytime.'=>'Para una <b> estrategia para el mercado en LATAM </b> o si desea <b> trabajar con los mejores estudios de videojuegos </b>. <b> Siéntase libre </b> de contactarnos en cualquier momento.',
     'Your Name'=>'Tu nombre',
     'Choose Your Role'=> 'Escoge tu rol',
@@ -77,6 +77,9 @@ $texts = array(
     'Year'=> 'Año',
     'Service'=> 'Servicio',
 
+    // Servicios
+    'We Have'=> 'Tenemos',
+
     // footer
     'Sitemap'=>'Mapa del sitio',
     'Our Family'=> 'Nuestra familia',
@@ -88,5 +91,5 @@ $texts = array(
 
     ''=> ''
 );
-/*<?php echo __("", $lang);?>*/
+/*<?php echo __("", $lang);?>*/ // llamado a la función de traducción
 ?>
