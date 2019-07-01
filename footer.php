@@ -51,3 +51,24 @@
     <p> © 2019 <?php echo __("All Rights Reserved", $lang);?> </p>
   </div>
 </footer>
+<div id="pressRoom" class="trans5">
+  <div class="wrapPress displayFlex">
+    <span class="blackTexture texture"></span>
+    <div class="coverPress"></div>
+    <div class="infoPress">
+      <div class="wrapInfoPress displayFlex">
+        <h2><span class="highlight highPurplePastelWhite">The LATAM <br> Rulebook</span></h2>
+        <h3>Visit Our <b>Media Centers</b></h3>
+        <a href="https://activision.g64.mx/" target="_blank">
+          <img src="img/clients/activision-blue.svg">
+        </a>
+        <a href="https://bethesda.g64.mx/" target="_blank">
+          <img src="img/clients/bethesda-blue.svg">
+        </a>
+        <a href="http://press.latam.square-enix.com/territory_select.asp?from=%2Flanding%2Easp%3F" target="_blank">
+          <img src="img/clients/squareenix-blue.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
