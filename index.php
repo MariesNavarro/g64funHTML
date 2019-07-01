@@ -336,10 +336,11 @@
     wipesScroll();
     homeTriggersLogo();
     animationSectionsHome();
-
     sliderHomeFun(0);
     scrollHomeCover();
     sliderContactCount();
+    preventGamingText();
+
     setTimeout(function(){
       panicLoad();
       animateSeq();

@@ -32,7 +32,7 @@ function canPlayVideo(){
 function canSeeImg(){
   var img = _("#imgSlider"),
       load = _("#loading");
-  img.addEventListener('load', function(){
+  img.addEventListener('load', function(s){
     setTimeout(function(){
         load.style.opacity = "0";
         setTimeout(function(){
@@ -547,4 +547,15 @@ function sliderContact(n){
       cSliderContact = 3;
     break;
   }
+}
+
+function preventGamingText(){
+  var control = new ScrollMagic.Controller({globalSceneOptions: {duration: "100%", offset: 0}});
+  var topScene = new ScrollMagic.Scene({triggerElement: "#servicesHome", triggerHook: 'onEnter'})
+  .addTo(control)
+  .on("enter leave", function (e) {
+    if(e.type === "enter"){
+      imagesOutHome();
+    }
+  });
 }
