@@ -222,11 +222,31 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/clients/activision-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/activision-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/clients/activision.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/clients/activision.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/clients/bethesda-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/bethesda-blue.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -267,6 +287,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/clients/intel.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/clients/squareenix-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/squareenix-blue.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1543,11 +1573,25 @@
 		"oAP": "/lang/pt.php",
 		"oF": 0
 		},
+	"/project.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/project.php",
+		"oF": 0
+		},
 	"/projects.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/projects.html",
+		"oF": 0
+		},
+	"/projects.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/projects.php",
 		"oF": 0
 		},
 	"/README.md": {
@@ -1580,6 +1624,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/services.html",
+		"oF": 0
+		},
+	"/services.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/services.php",
 		"oF": 0
 		}
 	},

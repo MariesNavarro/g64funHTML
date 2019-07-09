@@ -4,7 +4,6 @@ var strServ3 = $("#strServ3").val();
 var strServ4 = $("#strServ4").val();
 var strServ5 = $("#strServ5").val();
 var strServ6 = $("#strServ6").val();
-var strSayhi = $("#strSayhi").val();
 
 var speedType = 60,
     pathLenght = 76.39474487304688,
@@ -19,20 +18,10 @@ if(checkMobile){
   loadVideo();
 }
 
-function canPlayVideo(){
-  var load = _("#loading");
-  setTimeout(function(){
-      load.style.opacity = "0";
-      setTimeout(function(){
-        load.setAttribute("class", "displayNone trans5");
-      },500);
-  },1000);
-}
-
 function canSeeImg(){
   var img = _("#imgSlider"),
       load = _("#loading");
-  img.addEventListener('load', function(s){
+  img.addEventListener('load', function(){
     setTimeout(function(){
         load.style.opacity = "0";
         setTimeout(function(){
@@ -420,6 +409,17 @@ function imagesOutHome(){
   }
 }
 
+function preventGamingText(){
+  var control = new ScrollMagic.Controller({globalSceneOptions: {duration: "100%", offset: 0}});
+  var topScene = new ScrollMagic.Scene({triggerElement: "#servicesHome", triggerHook: 'onEnter'})
+  .addTo(control)
+  .on("enter leave", function (e) {
+    if(e.type === "enter"){
+      imagesOutHome();
+    }
+  });
+}
+
 function fadeGamingText(){
   var p = _("#gamingText"),
      control = new ScrollMagic.Controller({
@@ -458,7 +458,7 @@ function animationSectionsHome(){
 }
 
 var sayhi = new TypeIt("#sayhi", {
-  strings: strSayhi, //"Say Hi. Don't Be Shy!",
+  strings: "Say Hi. Don't Be Shy!",
   cursor: false,
   speed: 60,
   afterComplete: function(){
@@ -547,15 +547,4 @@ function sliderContact(n){
       cSliderContact = 3;
     break;
   }
-}
-
-function preventGamingText(){
-  var control = new ScrollMagic.Controller({globalSceneOptions: {duration: "100%", offset: 0}});
-  var topScene = new ScrollMagic.Scene({triggerElement: "#servicesHome", triggerHook: 'onEnter'})
-  .addTo(control)
-  .on("enter leave", function (e) {
-    if(e.type === "enter"){
-      imagesOutHome();
-    }
-  });
 }
