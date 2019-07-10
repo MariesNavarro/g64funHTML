@@ -4,6 +4,13 @@
   $background = "#FFF";
 ?>
 <?php include 'header.php'; ?>
+<?php
+  /* Obtener datos */
+  $listEquipo   =  getEquipo($lang);
+?>
+
+      <input type="hidden" id="strAbout" value='<?php echo __("About", $lang);?>'>
+      <input type="hidden" id="strLatamRule" value='<?php echo __("The LATAM Rulebook", $lang);?>'>
 
       <section id="aboutCover" class="backImg">
         <h1 id="h1CoverAbout" class="highlight highGreenWhite trans5 opacityZero"></h1>
@@ -64,6 +71,20 @@
         <div class="marginAbout">
           <h3 style="opacity: 0; transform: translateY(100px);"><?php echo __("This Is Us", $lang);?></h3>
           <p style="opacity: 0; transform: translateY(100px);"><?php echo __("A team creating <b>great work</b> for <b>extraordinary brands</b> and <b>audiences</b>.", $lang);?></p>
+          <?php
+              $i = 0;
+              foreach ($listEquipo as $item) {
+                if (($i % 3) == 0) { echo "<ul class=\"rowTeam displayFlex\">" ; }
+                echo "<li style=\"background:".$item['background']."\" class=\"displayFlex trans5 clientSectionHomeOff\">
+                              <img src=\"".$item['url']."\">
+                              <h3>".$item['cargo']."</h3>
+                              <h4>".$item['nombre']."</h4>
+                      </li>";
+                if (($i % 3) == 2 || (sizeof($proyectos)-1 == $i) ) { echo "</ul>";}
+                $i++;
+              }
+          ?>
+          <!--
           <ul class="rowTeam displayFlex">
             <li style="background:#007799" class="displayFlex trans5 clientSectionHomeOff">
               <img src="img/team/oscar-ordaz.svg">
@@ -105,12 +126,13 @@
               <h4>Adriana Rangel</h4>
             </li>
           </ul>
+        -->
         </div>
       </section>
       <section id="pressRoomAbout">
         <div class="marginAbout">
-          <h3>Press Room</h3>
-          <p>Visit our <b>Media Centers</b></p>
+          <h3><?php echo __("Press Room", $lang);?></h3>
+          <p><?php echo __("Visit our <b>Media Centers</b>", $lang);?></p>
           <ul class="displayFlex">
             <li>
               <a href="https://activision.g64.mx/" target="_blank" class="displayFlex">
@@ -134,16 +156,16 @@
       <section id="jobAbout">
         <span class="blackTexture texture"></span>
         <div class="marginAbout">
-          <h3>Want To Join Our Team?</h3>
-          <p>We are always glad to receive <b>CV’s books and reels.</b></p>
-          <p>Get in contact with us through.</p>
+          <h3><?php echo __("Want To Join Our Team?", $lang);?></h3>
+          <p><?php echo __("We are always glad to receive <b>CV’s books and reels.</b>", $lang);?></p>
+          <p><?php echo __("Get in contact with us through.", $lang);?></p>
           <h4>
-            <a href="openings.html">See Our Openings</a>
+            <a href="openings.html"><?php echo __("See Our Openings", $lang);?></a>
             <span class="trans5"></span>
           </h4>
-          <p>-OR-</p>
+          <p><?php echo __("-OR-", $lang);?></p>
           <h4>
-            <a href="mailto:talento@g64.agency">Write Us</a>
+            <a href="mailto:talento@g64.agency"><?php echo __("Write Us", $lang);?></a>
             <span class="trans5"></span>
           </h4>
         </div>
@@ -189,6 +211,8 @@
        });
 
        var thanksPhrases = [ "Thank You", "Cool, thanks", "Again? You’re so generous", "Thanks, you are so cool!", "Cool, thanks", "More like? You’re breathtaking!", "The team is happy", "Thank You", "We appreciate all the love" ];
+       var thanksPhrasesES = [ "Gracias", "Genial, gracias", "¿Otra vez? Eres tan generoso", "Gracias, eres genial!", "Genial, gracias", "¿Más como? ¡Estás impresionante!", "El equipo esta feliz", "Gracias", "Apreciamos todo el amor" ];
+       var thanksPhrasesPT = [ "Thank You", "Cool, thanks", "Again? You’re so generous", "Thanks, you are so cool!", "Cool, thanks", "More like? You’re breathtaking!", "The team is happy", "Thank You", "We appreciate all the love" ];
        var countCoolness = 0, txCountCool = 0;
        var rotGem = false;
        function coolnessCount(){
@@ -208,7 +232,13 @@
          txCount.innerHTML = countCoolness;
          if(txCountCool >= 9) txCountCool = 0;
          if(txCountCool < 0) txCountCool = 1;
-         txPhrase.innerHTML = thanksPhrases[txCountCool];
+         var lang = $("#lang").val();
+         switch(lang) {
+            case 'EN':  txPhrase.innerHTML = thanksPhrases[txCountCool];break;
+            case 'ES':  txPhrase.innerHTML = thanksPhrasesES[txCountCool];break;
+            case 'PT':  txPhrase.innerHTML = thanksPhrasesPT[txCountCool];break;
+            default:    txPhrase.innerHTML = thanksPhrases[txCountCool];
+          }
          setTimeout(function(){
            txPhrase.style.opacity = "0";
            txPhrase.setAttribute("class", "trans5 scaleDown");
@@ -236,8 +266,9 @@
          },800);
        };
 
+       var strAbout = $("#strAbout").val();
        var aboutH1 = new TypeIt('#h1CoverAbout', {
-         strings: 'About',
+         strings: strAbout,
          cursor: false,
          speed: 60,
          waitUntilVisible: true

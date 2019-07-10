@@ -2,7 +2,7 @@
 $texts = array(
     // menú
     'Home'=> 'Inicio',
-    'About Us' => 'Acerca de nosotros',
+    'About' => 'Acerca de',
     'Portfolio'=> 'Portafolio',
     'Sevices'=> 'Servicio',
     'Press Room'=> 'Cuarto de prensa',
@@ -52,9 +52,8 @@ $texts = array(
     'Ask Wisely'=> 'Comentario',
     'Submit'=> 'Enviar',
 
-    // about
-    'The LATAM'=> 'El latino',
-    'Rulebook'=> 'Libro de reglas',
+    // About
+    'The LATAM Rulebook'=> 'El libro de reglas de LATAM',
     'The <b>need of recognition</b> is a key driver in the region.'=> 'La <b> necesidad de reconocimiento </b> es un factor clave en la región.',
     'The <b>LATAM</b> fans are extremely <b>loyal to the franchise</b>.'=> 'Los fanáticos de <b> LATAM </b> son extremadamente <b> leales a la franquicia </b>.',
     'The players in <b>LATAM</b> think twice before <b>buying a game</b>.'=> 'Los jugadores en <b> LATAM </b> piensan dos veces antes de <b> comprar un juego </b>.',
@@ -63,6 +62,15 @@ $texts = array(
     'A team creating <b>great work</b> for <b>extraordinary brands</b> and <b>audiences</b>.'=> 'Un equipo que crea <b> gran trabajo </b> para <b> marcas extraordinarias </b> y <b> audiencias </b>.',
     'Want To Join Our Team?'=> '¿Quieres unirte a nuestro equipo?',
     'We are always glad to receive CV’s books and reels. Get in contact with us through.'=> 'Siempre estamos contentos de recibir libros y carretes de CV. Ponte en contacto con nosotros a través de.',
+    'Press Room' => 'Sala de prensa',
+    'Visit our <b>Media Centers</b>' => 'Visite nuestros <b> Centros de medios </b>',
+    'Want To Join Our Team?' => '¿Quieres unirte a nuestro equipo?',
+    'We are always glad to receive <b>CV’s books and reels.</b>' => 'Siempre nos complace recibir <b> libros y carretes de CV. </b>',
+    'Get in contact with us through.' => 'Ponte en contacto con nosotros a través de.',
+    'See Our Openings' => 'Vea nuestras aperturas',
+    '-OR-' => '-O-',
+    'Write Us' => 'Escribenos',
+
 
     // Portafolio
     'A Controller <br> For Everyone'=> 'Un controlador <br> para todos',
