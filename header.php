@@ -130,7 +130,7 @@ Date: 05-19
             </li>
             <li class="displayFlex menuLinkOff">
               <p>03</p>
-              <a href="projects.php?lang=<?php echo $lang ?>" name="portafolio link"><h3><?php echo __("Portfolio", $lang);?></h3></a>
+              <a href="projects.php?lang=<?php echo $lang ?>" name="projects link"><h3><?php echo __("Projects", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>04</p>
@@ -138,20 +138,24 @@ Date: 05-19
             </li>
             <li class="displayFlex menuLinkOff">
               <p>05</p>
-              <a role="button" name="press room link" onclick="pressRoom('open')"><h3><h3><?php echo __("Press Room", $lang);?></h3></a>
+              <a role="button" name="press room link" onclick="pressRoomOnMenu('openPress')"><h3><h3><?php echo __("Press Room", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>06</p>
+              <a href="openings.html" name="openings link"><h3><?php echo __("Openings", $lang);?></h3></a>
+            </li>
+            <li class="displayFlex menuLinkOff">
+              <p>07</p>
               <a role="buttom" name="contact link" onclick="contactLink()"><h3><?php echo __("Contact", $lang);?></h3></a>
             </li>
           </ul>
           <!-- Contact Menu -->
           <div id="menuContactInfo" class="menuLinkOff">
               <h4><?php echo __("Follow Us", $lang);?></h4>
-              <a href="#" target="_blank" name="instagram g64"><b>Instagram</b></a>
-              <a href="#" target="_blank" name="vimeo g64"><b>Vimeo</b></a>
-              <a href="#" target="_blank" name="facebook g64"><b>Facebook</b></a>
-              <a href="#" target="_blank" name="twitter g64"><b>Twitter</b></a>
+              <a href="https://www.instagram.com/g64.agency/" target="_blank"> <img src="img/ic/instagram-out.svg" onmouseover="overIcon('over', 'instagram-', this)" onmouseout="overIcon('out', 'instagram-', this)" width="30" height="30"> </a>
+              <a href="https://vimeo.com/user85719236" target="_blank"><img src="img/ic/vimeo-out.svg" onmouseover="overIcon('over', 'vimeo-', this)" onmouseout="overIcon('out', 'vimeo-', this)" width="30" height="30"></a>
+              <a href="https://www.facebook.com/pages/G64/1489576167830724" target="_blank"><img src="img/ic/facebook-out.svg" onmouseover="overIcon('over', 'facebook-', this)" onmouseout="overIcon('out', 'facebook-', this)" width="30" height="30"></a>
+              <a href="https://twitter.com/g64agency" target="_blank"><img src="img/ic/twitter-out.svg" onmouseover="overIcon('over', 'twitter-', this)" onmouseout="overIcon('out', 'twitter-', this)" width="30" height="30"></a>
               <a href="" name="mail info g64"><b>info@g64.agency</b></a>
               <a href="" name="cookies and privacy policy" target="_blank"><span><?php echo __("Cookies and Privacy Policy", $lang);?></span></a>
           </div>

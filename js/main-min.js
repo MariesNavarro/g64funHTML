@@ -1,5 +1,3 @@
-var strLatamRule = $("#strLatamRule").val();
-
 window.performance = window.performance || {};
     window.performance.now = (function() {
     return performance.now       ||
@@ -225,6 +223,17 @@ function contactLink(c){
   }
 }
 
+function pressRoomOnMenu(c){
+  if(c === "nomenu"){
+    window.location.href = 'about.html#pressRoomAbout';
+  } else {
+    var butt = _("#menuBtt");
+    menu('close', butt);
+    window.location.href = 'about.html#pressRoomAbout';
+  }
+}
+
+
 function canPlayVideo(){
   var load = _("#loading");
   setTimeout(function(){
@@ -400,35 +409,6 @@ function animationLogo(){
     logo.style.backgroundImage = "url('img/seqLogo/"+cLogo+".png')";
 }
 
-function pressRoom(c){
-  var w = _("#pressRoom"),
-      butt = _("#menuBtt");
-  if(c === 'open'){
-    w.style.display = "block";
-    w.style.opacity = "1";
-    closePress.style.display = "block";
-    closePress.style.opacity = "1";
-    menu('close', butt);
-    changeColorMenu("purple");
-  } else {
-    w.style.opacity = "0";
-    closePress.style.opacity = "0";
-    setTimeout(function(){
-      w.style.display = "none";
-      closePress.style.display = "none";
-    },1000);
-  }
-}
-
-var latamRuleTx = new TypeIt("#latamRule", {
-  strings: "<span class='highlight highBlueSky'>"+strLatamRule+"</span>",
-  cursor: false,
-  speed: 60,
-  afterComplete: function(){
-      fadeScaleIn("#aboutRulebook", "#pointsRulebook>li", -50);
-  }
-});
-
 function aboutTriggerLogo(){
   var control = new ScrollMagic.Controller({globalSceneOptions: {duration: 0, offset: -65}});
   new ScrollMagic.Scene({triggerElement: "#aboutRulebook", triggerHook: 'onLeave'})
@@ -519,6 +499,38 @@ function move(){
 }
 
 
-function h1About(){
+function insideGallery(){
+  var control = new ScrollMagic.Controller({globalSceneOptions: {duration: "110%", offset: -45}});
+  new ScrollMagic.Scene({triggerElement: "#insideGallery", triggerHook: 'onLeave'})
+  .addTo(control)
+  .on("enter leave", function (e) {
+    if(e.type === "enter"){
+      changeColorMenu("white");
+      isMenuPurple = false;
+    }
+    if(e.type === "leave"){
+      changeColorMenu("purple");
+      isMenuPurple = true;
+    }
+  });
+}
 
+function projectsGallery(){
+  var control = new ScrollMagic.Controller({globalSceneOptions: {duration: "110%", offset: -45}});
+  new ScrollMagic.Scene({triggerElement: "#projectsGallery", triggerHook: 'onLeave'})
+  .addTo(control)
+  .on("enter leave", function (e) {
+    if(e.type === "enter"){
+      changeColorMenu("purple");
+      isMenuPurple = true;
+    }
+    if(e.type === "leave"){
+      changeColorMenu("white");
+      isMenuPurple = false;
+    }
+  });
+}
+
+function overIcon(c, e, t){
+  t.setAttribute('src', 'img/ic/' + e + c + '.svg');
 }

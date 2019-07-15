@@ -83,6 +83,8 @@
     <script src="js/main-min.js" charset="utf-8"></script>
     <script src="js/backend.js" charset="utf-8"></script>
     <script>
+        projectsGallery();
+        loadSeq();
         function projectThumb(c, t){
           var img = t.children[0].children[0];
           if(c == "over"){
@@ -97,11 +99,15 @@
           if(checkMobile){
               langMenu.style.display = "none";
           }
-          setTimeout(function(){
-             panicLoad();
-           },1000);
           wipesScroll();
+
+          ratioGallery("#sliderProject");
+          ratioGallery("#videoProject");
         }
+        window.onresize = function(){
+          ratioGallery("#sliderProject");
+          ratioGallery("#videoProject");
+        };
     </script>
   </body>
 </html>

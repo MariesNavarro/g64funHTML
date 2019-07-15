@@ -473,10 +473,11 @@ nav>div>#menuBtt>span{
   font-family: 'Avenir Black', sans-serif;
   font-size: 1.8vh;
   margin: 0;
+  color: #34d07c;
 }
 #menu>div>#menuIndex>li>a>h3{
   font-family: 'Merriweather', serif;
-  font-size: 5.5vh;
+  font-size: 5vh;
   margin: 0 0 15px 0;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -1223,7 +1224,7 @@ footer>div>p{
   }
   #menu>div>#menuContactInfo{
     width: 43.75%;
-    height: calc(43.8vh + 120px);
+    height: calc(48vh + 120px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1348,7 +1349,13 @@ footer>div>p{
   #languageMenu>a:hover>span:nth-child(2){ width: 20px }
   #menu>div>#menuIndex>li>a:hover>h3{ margin: 0 0 15px 10px }
   nav>div>#menuBtt:hover>span{ width: 25px }
-  #menu>div>#menuContactInfo>a:hover{ margin: 0 0 10px 10px }
+  #menu>div>#menuContactInfo>a:hover{
+      -webkit-transform: translateX(10px);
+      -moz-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+      -o-transform: translateX(10px);
+      transform: translateX(10px);
+   }
   #interfaceSliderHome>li>a:hover{ opacity: 0.7; }
   #interfaceSliderHome>li>a:hover>svg>circle{
     -webkit-transform: scale(2);

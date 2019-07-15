@@ -13,7 +13,7 @@
       <input type="hidden" id="strLatamRule" value='<?php echo __("The LATAM Rulebook", $lang);?>'>
 
       <section id="aboutCover" class="backImg">
-        <h1 id="h1CoverAbout" class="highlight highGreenWhite trans5 opacityZero"></h1>
+        <h1 id="h1CoverAbout" class="highlight highBlueSky trans5 opacityZero"></h1>
         <span class="whiteTexture texture"></span>
     	</section>
       <section id="aboutRulebook" class="">
@@ -196,6 +196,15 @@
        videoAboutInterface.addEventListener("mousemove", function(e){
          clientAboutX = e.clientX;
          clientAboutY = e.clientY;
+       });
+
+       var latamRuleTx = new TypeIt("#latamRule", {
+         strings: "<span class='highlight highBlueSky'>The LATAM Rulebook</span>",
+         cursor: false,
+         speed: 60,
+         afterComplete: function(){
+             fadeScaleIn("#aboutRulebook", "#pointsRulebook>li", -50);
+         }
        });
 
        var particles = bodymovin.loadAnimation({

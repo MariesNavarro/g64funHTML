@@ -15,7 +15,7 @@ Date: 05-19
     <meta http-equiv="pragma" content="no-cache">
     <meta name="google" content="notranslate">
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=5.0000">
-    <title>Projects| G64 Agency | LATAM</title>
+    <title></title>
     <style>
       #loading{
         position: fixed;
@@ -67,7 +67,7 @@ Date: 05-19
     </div>
     <main>
       <nav class="displayFlex">
-        <a id="logoNav" class="whiteLogo" href="#" onmouseover="hoverAnimate()"></a>
+        <a id="logoNav" class="whiteLogo" href="index.html" onmouseover="hoverAnimate()"></a>
         <div class="displayFlex">
           <div id="languageMenu" class="displayFlex">
             <a href="#" class="trans3 whiteColor"><span>EN</span> <span class="trans5"></span></a>
@@ -105,22 +105,26 @@ Date: 05-19
             </li>
             <li class="displayFlex menuLinkOff">
               <p>05</p>
-              <a role="button" onclick="pressRoom('close')"><h3>Press Room</h3></a>
+              <a href="about.html#pressRoomAbout"><h3>Press Room</h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>06</p>
+              <a href="openings.html"><h3>Openings</h3></a>
+            </li>
+            <li class="displayFlex menuLinkOff">
+              <p>07</p>
               <a href="index.html#contactHome"><h3>Contact</h3></a>
             </li>
           </ul>
           <!-- Contact Menu -->
           <div id="menuContactInfo" class="menuLinkOff">
               <h4>Contact Us</h4>
-              <a href="https://www.instagram.com/g64.agency/" target="_blank"><b>Instagram</b></a>
-              <a href="https://vimeo.com/user85719236" target="_blank"><b>Vimeo</b></a>
-              <a href="https://www.facebook.com/pages/G64/1489576167830724" target="_blank"><b>Facebook</b></a>
-              <a href="https://twitter.com/g64agency" target="_blank"><b>Twitter</b></a>
+              <a href="https://www.instagram.com/g64.agency/" target="_blank"> <img src="img/ic/instagram-out.svg" onmouseover="overIcon('over', 'instagram-', this)" onmouseout="overIcon('out', 'instagram-', this)" width="30" height="30"> </a>
+              <a href="https://vimeo.com/user85719236" target="_blank"><img src="img/ic/vimeo-out.svg" onmouseover="overIcon('over', 'vimeo-', this)" onmouseout="overIcon('out', 'vimeo-', this)" width="30" height="30"></a>
+              <a href="https://www.facebook.com/pages/G64/1489576167830724" target="_blank"><img src="img/ic/facebook-out.svg" onmouseover="overIcon('over', 'facebook-', this)" onmouseout="overIcon('out', 'facebook-', this)" width="30" height="30"></a>
+              <a href="https://twitter.com/g64agency" target="_blank"><img src="img/ic/twitter-out.svg" onmouseover="overIcon('over', 'twitter-', this)" onmouseout="overIcon('out', 'twitter-', this)" width="30" height="30"></a>
               <a href="mailto:info@g64.agency" ><b>info@g64.agency</b></a>
-              <a href="#" target="_blank"><span>Cookies and Privacy Policy</span></a>
+              <a href="assets/aviso-privacidad.pdf" target="_blank"><span>Cookies and Privacy Policy</span></a>
           </div>
         </div>
       </div>
@@ -207,15 +211,36 @@ Date: 05-19
       </div>
     </div>
     <div id="insideGallery" class="panel">
+      <span class="whiteTexture texture"></span>
       <ul class="rowProject displayFlex">
-        <li style="background-image:url('img/projects/bemine/thumbnail.jpg')"></li>
-        <li style="background-image:url('img/projects/codwwii/thumbnail.jpg')"></li>
-        <li style="background-image:url('img/projects/finalfantasyxv/thumbnail.jpg')"></li>
+        <li style="background-image:url('img/projects/bemine/thumbnail.jpg')">
+          <a href="#">
+            <p class="highlight highWhitePurpleBlue"><b>Be Mine</b> for Bethesda</p>
+          </a>
+        </li>
+        <li style="background-image:url('img/projects/codwwii/thumbnail.jpg')">
+          <a href="#">
+            <p class="highlight highWhitePurpleBlue"><b>COD WWII</b> for Activision</p>
+          </a>
+        </li>
+        <li style="background-image:url('img/projects/finalfantasyxv/thumbnail.jpg')">
+          <a href="#">
+            <p class="highlight highWhitePurpleBlue"><b>Final Fantasy</b> for Square Enix</p>
+          </a>
+        </li>
       </ul>
 
       <ul class="rowProject displayFlex">
-        <li style="background-image:url('img/projects/gamingnight/thumbnail.jpg')"></li>
-        <li style="background-image:url('img/projects/heartstones/thumbnail.jpg')"></li>
+        <li style="background-image:url('img/projects/gamingnight/thumbnail.jpg')">
+          <a href="#">
+            <p class="highlight highWhitePurpleBlue"><b>Gaming Night</b> for Intel</p>
+          </a>
+        </li>
+        <li style="background-image:url('img/projects/heartstones/thumbnail.jpg')">
+          <a href="#">
+            <p class="highlight highWhitePurpleBlue"><b>Heartstones</b> for Blizzard</p>
+          </a>
+        </li>
         <!-- <li style="background:orange"></li> -->
       </ul>
     </div>
@@ -225,6 +250,7 @@ Date: 05-19
     <script src="js/debug.addIndicators.js" charset="utf-8"></script>
     <script src="js/main-min.js" charset="utf-8"></script>
     <script>
+      insideGallery();
       changeColorMenu("purple");
         loadSeq();
         function projectThumb(c, t){

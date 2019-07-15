@@ -677,7 +677,21 @@ section>.texture{
   width: 100vw;
   min-width: 250px;
   height: 100vh;
-  background: #293376;
+  background: #1e1338;
+}
+#insideGallery>.texture{
+  opacity: 0.05;
+}
+#insideGallery>ul>li>a{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#insideGallery>ul>li>a>p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .rowProject{
   width: 100%;
@@ -693,6 +707,7 @@ section>.texture{
   justify-content: center;
 }
 .rowProject>li{
+    position: relative;
     width: 250px;
     height: 250px;
     margin: 20px;
