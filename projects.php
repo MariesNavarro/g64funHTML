@@ -99,6 +99,9 @@
           if(checkMobile){
               langMenu.style.display = "none";
           }
+          setTimeout(function(){
+             panicLoad();
+           },1000);
           wipesScroll();
 
           ratioGallery("#sliderProject");

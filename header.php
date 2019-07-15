@@ -1,9 +1,3 @@
-<!--
-Theme: G64 Agency
-Version: 2
-Author: OET Capital
-Date: 05-19
--->
 <?php
   require_once('backend/lib/db.php');
   require_once('lang/languages.php');
@@ -16,9 +10,6 @@ Date: 05-19
   if (isset($_GET['idcat'])) { $idcategoria = $_GET['idcat']; } else { $idcategoria = 0; /* por defecto $idcategoria todos */}
 
   //echo 'l='.$lang.' p='.$idproyecto,' c='.$idcliente,' y='.$year.' s='.$idcategoria;
-
-  /* Guardar el lenguaje en la página */
-  echo '<input type="hidden" id="lang" name="lang" value='.$lang.'>';
 
   $page = basename($_SERVER['PHP_SELF']);
 ?>
@@ -34,7 +25,7 @@ Date: 05-19
     <meta http-equiv="pragma" content="no-cache">
     <meta name="google" content="notranslate">
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=5.0000">
-    <title><?php echo $title = ""; ?></title>
+    <title><?php echo $title; ?></title>
     <style>
       #loading{
         position: fixed;
@@ -82,6 +73,7 @@ Date: 05-19
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body style="background:<?php echo $site = ""; ?>">
+    <input type="hidden" id="lang" name="lang" value='<?php echo $lang; ?>'>
     <div id="loading" class="displayFlex trans5">
       <img src="img/logotipo-g64.gif" alt="Logotipo G64 animado" width="80" height="76">
     </div>

@@ -215,21 +215,21 @@ function fadeScaleOutFlex(t,els){
 
 function contactLink(c){
   if(c === "nomenu"){
-    window.location.href = 'index.html#contactHome';
+    window.location.href = 'index.php#contactHome';
   } else {
     var butt = _("#menuBtt");
     menu('close', butt);
-    window.location.href = 'index.html#contactHome';
+    window.location.href = 'index.php#contactHome';
   }
 }
 
 function pressRoomOnMenu(c){
   if(c === "nomenu"){
-    window.location.href = 'about.html#pressRoomAbout';
+    window.location.href = 'about.php#pressRoomAbout';
   } else {
     var butt = _("#menuBtt");
     menu('close', butt);
-    window.location.href = 'about.html#pressRoomAbout';
+    window.location.href = 'about.php#pressRoomAbout';
   }
 }
 
