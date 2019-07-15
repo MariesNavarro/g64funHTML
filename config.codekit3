@@ -16,18 +16,25 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
-	"/about.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/about.html",
-		"oF": 0
-		},
 	"/about.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/about.php",
+		"oF": 0
+		},
+	"/assets/about-timelapse.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/about-timelapse.mp4",
+		"oF": 0
+		},
+	"/assets/about-timelapse.webm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/about-timelapse.webm",
 		"oF": 0
 		},
 	"/assets/demo.mp4": {
@@ -599,6 +606,36 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"/img/ic/ic-thumbs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/ic/ic-thumbs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/ic/ico-green.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/ic/ico-green.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/ic/ico-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/ic/ico-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/ic/outcome.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -644,6 +681,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/ic/point_4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/ic/txt-thumbs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/ic/txt-thumbs.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1157,6 +1204,61 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/sliderAboutMobile/0.jpg": {
+		"ft": 16384,
+		"iS": 131286,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/sliderAboutMobile/0.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/sliderAboutMobile/1.jpg": {
+		"ft": 16384,
+		"iS": 131913,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/sliderAboutMobile/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/sliderAboutMobile/2.jpg": {
+		"ft": 16384,
+		"iS": 129378,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/sliderAboutMobile/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/sliderAboutMobile/3.jpg": {
+		"ft": 16384,
+		"iS": 119080,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/sliderAboutMobile/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/sliderAboutMobile/4.jpg": {
+		"ft": 16384,
+		"iS": 120440,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/sliderAboutMobile/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/sliderContact/0.jpg": {
 		"ft": 16384,
 		"iS": 134361,
@@ -1333,82 +1435,75 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/team/adriana-rangel.jpg": {
-		"ft": 16384,
-		"iS": 289360,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/team/adriana-rangel.jpg",
+	"/img/team/adriana-rangel.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/team/adriana-rangel.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"/img/team/armando-ruiz.jpg": {
-		"ft": 16384,
-		"iS": 343876,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/team/armando-ruiz.jpg",
+	"/img/team/armando-ruiz.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/team/armando-ruiz.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"/img/team/carlos-galvez.jpg": {
-		"ft": 16384,
-		"iS": 400838,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/team/carlos-galvez.jpg",
+	"/img/team/carlos-galvez.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/team/carlos-galvez.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"/img/team/eduardo-ake.jpg": {
-		"ft": 16384,
-		"iS": 338843,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/team/eduardo-ake.jpg",
+	"/img/team/eduardo-ake.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/team/eduardo-ake.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"/img/team/gabo-sanchez.jpg": {
-		"ft": 16384,
-		"iS": 479603,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/team/gabo-sanchez.jpg",
+	"/img/team/gabo-sanchez.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/team/gabo-sanchez.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"/img/team/marcela-giraldo.jpg": {
-		"ft": 16384,
-		"iS": 256679,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/team/marcela-giraldo.jpg",
+	"/img/team/marcela-giraldo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/team/marcela-giraldo.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"/img/team/oscar-ordaz.jpg": {
-		"ft": 16384,
-		"iS": 366712,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/team/oscar-ordaz.jpg",
+	"/img/team/oscar-ordaz.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/team/oscar-ordaz.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/img/white-texture.png": {
 		"ft": 32768,
@@ -1472,6 +1567,16 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/js/ani.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/ani-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/backend.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1492,22 +1597,20 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/data.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/js/data-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/js/debug.addIndicators.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/debug.addIndicators-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/home-min-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/home-min-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1571,6 +1674,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/lang/pt.php",
+		"oF": 0
+		},
+	"/openings.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/openings.html",
 		"oF": 0
 		},
 	"/project.php": {
