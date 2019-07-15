@@ -1,3 +1,5 @@
+var strLatamRule = $("#strLatamRule").val();
+
 window.performance = window.performance || {};
     window.performance.now = (function() {
     return performance.now       ||
@@ -419,7 +421,7 @@ function pressRoom(c){
 }
 
 var latamRuleTx = new TypeIt("#latamRule", {
-  strings: "<span class='highlight highBlueSky'>The LATAM Rulebook</span>",
+  strings: "<span class='highlight highBlueSky'>"+strLatamRule+"</span>",
   cursor: false,
   speed: 60,
   afterComplete: function(){

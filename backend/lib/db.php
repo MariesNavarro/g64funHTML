@@ -121,6 +121,22 @@ function getServicios($lang) {
   return $resultado;
 }
 
+function getEquipo($lang) {
+  $link      = connect();
+  $resultado = array();
+
+  $consulta = "SELECT id,nombre,cargo,url,background, orden FROM g64_equipo  WHERE idioma = '".$lang."' and Activo = 'S' ORDER BY orden";
+
+  if ($registros = mysqli_query($link, $consulta)) {
+    while ($fila = mysqli_fetch_array($registros)) {
+        $resultado[] = $fila;
+     }
+  }
+
+  Close($link);
+  return $resultado;
+}
+
 function getproyectos($lang,$idcliente,$year,$idcategoria) {
   $link      = connect();
   $resultado = array();
