@@ -5,7 +5,7 @@ Author: OET Capital
 Date: 07-01
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,10 +16,134 @@ Date: 07-01
     <meta name="google" content="notranslate">
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=5.0000">
     <title>Openings | G64 Agency | LATAM</title>
+    <style>
+      #loading{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left:0;
+        background: #1e1338;
+        z-index: 5000;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      #loading>img{ margin-top: calc(50vh - 48px); }
+    </style>
     <meta name="description" content="Full advertising services for the entertainment industry">
     <meta name="keywords" content="digitalmarketing, LATAM, digitalmarketing, digitalmarketingexpert, g64, gaming, gamer, gamersmx, games, videogames, bethesda, activision, squareenix, videogames, public relations">
+    <meta property="og:title" content="About Us | G64 Agency | LATAM">
+    <meta property="og:url" content="https://g64.agency/en/about.html">
+    <meta property="og:site_name" content="About Us | G64 Agency | LATAM">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Full advertising services for the entertainment industry">
+    <meta property="og:image" content="img/og/fb.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="650">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://g64.agency/en/about.html">
+    <meta name="twitter:title" content="About Us | G64 Agency | LATAM">
+    <meta name="twitter:description" content="Full advertising services for the entertainment industry">
+    <meta name="twitter:image" content="img/og/tw.jpg">
+    <meta name="twitter:image:width" content="750">
+    <meta name="twitter:image:height" content="392">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="img/fav/site.webmanifest">
+    <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <link rel="shortcut icon" href="img/fav/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/master-min.css">
+    <link rel="stylesheet" href="css/sections-min.css">
   </head>
   <body>
+    <div id="loading" class="displayFlex trans5" style="display:none">
+      <img src="img/logotipo-g64.gif" alt="Logotipo G64 animado" width="80" height="76">
+    </div>
+    <main>
+      <nav class="displayFlex">
+        <a id="logoNav" class="whiteLogo" href="index.html" onmouseover="hoverAnimate()"></a>
+        <div class="displayFlex">
+          <div id="languageMenu" class="displayFlex">
+            <a href="#" class="trans3 whiteColor"><span>EN</span> <span class="trans5"></span></a>
+            <span class="trans3 whiteBack"></span>
+            <a href="#" class="trans3 whiteColor"><span>ES</span> <span class="trans5"></span></a>
+            <span class="trans3 whiteBack"></span>
+            <a href="#" class="trans3 whiteColor"><span>PT</span> <span class="trans5"></span></a>
+          </div>
+          <a role="button" id="menuBtt" class="displayFlex" onclick="menu('open', this)">
+            <span class="trans5 whiteBack"></span>
+            <span class="trans5 whiteBack"></span>
+            <span class="trans5 whiteBack"></span>
+          </a>
+        </div>
+      </nav>
+      <div id="menu">
+        <div class="displayFlex">
+          <!-- MENU -->
+          <ul id="menuIndex">
+            <li class="displayFlex menuLinkOff">
+              <p>01</p>
+              <a href="index.html"><h3>Home</h3></a>
+            </li>
+            <li class="displayFlex menuLinkOff">
+              <p>02</p>
+              <a href="about.html"><h3>About</h3></a>
+            </li>
+            <li class="displayFlex menuLinkOff">
+              <p>03</p>
+              <a href="projects.html"><h3>Projects</h3></a>
+            </li>
+            <li class="displayFlex menuLinkOff">
+              <p>04</p>
+              <a href="services.html"><h3>Services</h3></a>
+            </li>
+            <li class="displayFlex menuLinkOff">
+              <p>05</p>
+              <a onclick="pressRoomOnMenu('openPress')"><h3>Press Room</h3></a>
+            </li>
+            <li class="displayFlex menuLinkOff">
+              <p>06</p>
+              <a href="openings.html"><h3>Openings</h3></a>
+            </li>
+            <li class="displayFlex menuLinkOff">
+              <p>07</p>
+              <a href="index.html#contactHome"><h3>Contact</h3></a>
+            </li>
+          </ul>
+          <!-- Contact Menu -->
+          <div id="menuContactInfo" class="menuLinkOff">
+              <h4>Contact Us</h4>
+              <a href="https://www.instagram.com/g64.agency/" target="_blank"> <img src="img/ic/instagram-out.svg" onmouseover="overIcon('over', 'instagram-', this)" onmouseout="overIcon('out', 'instagram-', this)" width="30" height="30"> </a>
+              <a href="https://vimeo.com/user85719236" target="_blank"><img src="img/ic/vimeo-out.svg" onmouseover="overIcon('over', 'vimeo-', this)" onmouseout="overIcon('out', 'vimeo-', this)" width="30" height="30"></a>
+              <a href="https://www.facebook.com/pages/G64/1489576167830724" target="_blank"><img src="img/ic/facebook-out.svg" onmouseover="overIcon('over', 'facebook-', this)" onmouseout="overIcon('out', 'facebook-', this)" width="30" height="30"></a>
+              <a href="https://twitter.com/g64agency" target="_blank"><img src="img/ic/twitter-out.svg" onmouseover="overIcon('over', 'twitter-', this)" onmouseout="overIcon('out', 'twitter-', this)" width="30" height="30"></a>
+              <a href="mailto:info@g64.agency" ><b>info@g64.agency</b></a>
+              <a href="assets/aviso-privacidad.pdf" target="_blank"><span>Cookies and Privacy Policy</span></a>
+          </div>
+        </div>
+      </div>
+      <section id="openingsCover" class="backImg">
+        <h1 id="h1Openings" class="highlight">Openings</h1>
+        <span class="whiteTexture texture"></span>
+    	</section>
+      <section>
+        <span class="blackTexture texture"></span>
 
+      </section>
+    </main>
+    <script src="js/bowser.min.js" charset="utf-8"></script>
+    <script src="js/ScrollMagic.min.js" charset="utf-8"></script>
+    <script src="js/debug.addIndicators.js" charset="utf-8"></script>
+    <script src="js/typeit.min.js" charset="utf-8"></script>
+    <script src="js/main-min.js" charset="utf-8"></script>
+    <script src="js/ani.js"></script>
+    <script>
+      loadSeq();
+    </script>
   </body>
 </html>

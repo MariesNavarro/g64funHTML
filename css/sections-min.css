@@ -121,7 +121,6 @@ section>.texture{
   width: 150px;
   height: 150px;
 }
-
 .wrapIc>img{
   position: absolute;
   width: 100px;
@@ -210,6 +209,13 @@ section>.texture{
   width: 100%;
   line-height: 1.8;
   color:#007799;
+}
+#teamAbout>div>h3{
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  margin: 10px auto;
+  color: #007799;
+  font-size: 5vh;
 }
 #pressRoomAbout{
   position: relative;
@@ -423,6 +429,15 @@ section>.texture{
 }
 /* Projects */
 #projectsCover{ background-image: url('../img/covers/projects-cover-mobile.jpg'); }
+#projectsCover>h1{
+  position: absolute;
+  font-family: 'Merriweather', serif;
+  font-size: 5vh;
+  text-align: center;
+  width: 200px;
+  top: 80px;
+  left: calc(50% - 100px);
+}
 #projectsGallery{
   height: auto !important;
   padding: 80px 0;
@@ -604,6 +619,15 @@ section>.texture{
   font-size:4.2vh;
   text-align: center;
 }
+#servicesCover>h1{
+  position: absolute;
+  font-family: 'Merriweather', serif;
+  font-size: 5vh;
+  text-align: center;
+  top: 80px;
+  width: 200px;
+  left: calc(50% - 100px);
+}
 #headerProject{
   margin: 20px auto;
   -webkit-box-orient: vertical;
@@ -622,19 +646,172 @@ section>.texture{
   color:#293476;
   margin-bottom: 15px;
 }
-#sliderProject, #videoProject{
+.sliderProject, .videoProject, .coverProject{
   position: relative;
-  width: 100%;
-  margin: 0 auto;
+  width: 100vw;
+  margin: auto -90px;
+  text-align: center;
+  overflow: hidden;
 }
-#sliderProject>div,#videoProject>div{
+.coverProject>div{
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* Slider Projects */
+.sliderProject{
+  position: relative;
+  overflow: hidden;
+  background: red;
+}
+.sliderProject>ul{
   position: absolute;
-  display: block;
-  width: 100%;
+  left: 0;
+  top: 0;
+  width: 300%;
+  height: 100%;
+  background: yellow;
+}
+.sliderProject>ul>li{
+  width:33.33%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.sliderProject>.interface{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.sliderProject>.interface>div:first-child,
+.sliderProject>.interface>div:last-child{
+  width: 60px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sliderProject>.interface>div:first-child>a,
+.sliderProject>.interface>div:last-child>a{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.sliderProject>.interface>div:first-child>a>img,
+.sliderProject>.interface>div:last-child>a>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sliderProject>.interface>div:first-child>a:hover>img{
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+.sliderProject>.interface>div:last-child>a:hover>img{
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+.sliderProject>.interface>div:nth-child(2){
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.sliderProject>.interface>div:nth-child(2)>a{
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+.sliderProject>.interface>div:nth-child(2)>a>img{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+.sliderProject>.interface>div:nth-child(2)>a:hover>img:last-child{
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.cursor{
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+.cursor>div, .cursor>div>div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cursor>.play>div:first-child{
+  background-image: url('../img/ic/play.svg');
+}
+.cursor>.play>div:nth-child(2){
+  background-image: url('../img/ic/play-ic.svg');
+}
+.cursor>.pause>div:first-child{
+  background-image: url('../img/ic/pause.svg');
+}
+.cursor>.pause>div:nth-child(2){
+  background-image: url('../img/ic/pause-ic.svg');
+}
+.animateCircleText{
+  -webkit-animation: rotateLoop 5s linear infinite;
+  -moz-animation: rotateLoop 5s linear infinite;
+  -ms-animation: rotateLoop 5s linear infinite;
+  -o-animation: rotateLoop 5s linear infinite;
+  animation: rotateLoop 5s linear infinite;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+#sliderProject>div,.videoProject>video{
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  cursor: none;
 }
 #sliderInterface{
   width: 100%;
@@ -658,10 +835,11 @@ section>.texture{
 #outcome{
   position: relative;
   margin: 20px auto;
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 #outcome>img{
+  display: none;
   margin: 10px;
 }
 #outcome>div>h4{
@@ -693,7 +871,8 @@ section>.texture{
   bottom: 0;
   left: 0;
 }
-.rowProject{
+.rowProject, .rowProjectInside{
+  padding-top: 30px;
   width: 100%;
   height: 300px;
   background:none;
@@ -706,7 +885,7 @@ section>.texture{
   -ms-flex-pack: center;
   justify-content: center;
 }
-.rowProject>li{
+.rowProject>li, .rowProjectInside>li{
     position: relative;
     width: 250px;
     height: 250px;
@@ -714,6 +893,25 @@ section>.texture{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.rowProjectInside>li{
+  width: 150px;
+  height: 150px;
+}
+#insideGallery>footer{
+  position: absolute;
+  bottom: 0;
+}
+/* Openings */
+#openingsCover{ background-image: url('../img/covers/openings-cover-mobile.jpg'); }
+#openingsCover>h1{
+  position: absolute;
+  font-family: 'Merriweather', serif;
+  font-size: 5vh;
+  width: 220px;
+  text-align: center;
+  top:80px;
+  left: calc(50% - 110px);
 }
 /* MEDIO */
 @media (min-width: 680px) {
@@ -726,6 +924,7 @@ section>.texture{
   #projectsCover{
     background-image: url('../img/covers/projects-cover-desktop.jpg');
   }
+  #openingsCover{ background-image: url('../img/covers/openings-cover-desktop.jpg'); }
   .backBottom{
     background-position: center bottom !important;
   }
@@ -848,6 +1047,29 @@ section>.texture{
     width: 150px;
     height: 150px;
   }
+  #outcome{
+    width: 50%;
+  }
+  #outcome>img{
+    width: 100%;
+    display: block;
+  }
+  .sliderProject, .videoProject, .coverProject{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  .sliderProject>.interface>div:first-child,
+  .sliderProject>.interface>div:last-child{
+    width: 10%;
+    min-width: 150px;
+  }
+  .sliderProject>.interface>div:nth-child(2)>a{
+    width: 50px;
+    height: 50px;
+  }
 }
 /* DESKTOP Projects */
 @media (min-width: 920px) {
@@ -879,6 +1101,10 @@ section>.texture{
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+  .rowProjectInside>li{
+    width: 250px;
+    height: 250px;
   }
   .projectSection>div>header>div{
     width: 40%;

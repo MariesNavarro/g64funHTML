@@ -77,9 +77,6 @@
     <div id="loading" class="displayFlex trans5">
       <img src="img/logotipo-g64.gif" alt="Logotipo G64 animado" width="80" height="76">
     </div>
-    <div id="closePress" class="trans5" onclick="pressRoom('close')">
-      <span class="trans5"></span><span class="trans5"></span>
-    </div>
     <main>
       <nav class="displayFlex">
         <a id="logoNav" class="whiteLogo" href="index.php" name="home" onmouseover="hoverAnimate()"></a>

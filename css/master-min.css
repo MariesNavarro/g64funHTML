@@ -671,6 +671,17 @@ nav>div>#menuBtt>span:nth-child(3){ width: 10px; }
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
+.circleBulletFull{
+  fill:none;
+  stroke:#34d07c;
+  stroke-width:1px;
+  stroke-miterlimit:10;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 .pointBullet{
   fill:#34d07c;
   -webkit-transform-origin: 50%;

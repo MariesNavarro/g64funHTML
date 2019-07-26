@@ -8,7 +8,6 @@
   /* Obtener datos */
   $listEquipo   =  getEquipo($lang);
 ?>
-
       <input type="hidden" id="strAbout" value='<?php echo __("About", $lang);?>'>
       <input type="hidden" id="strLatamRule" value='<?php echo __("The LATAM Rulebook", $lang);?>'>
 
@@ -197,6 +196,27 @@
          clientAboutX = e.clientX;
          clientAboutY = e.clientY;
        });
+
+       var clientAboutX = 150,
+           clientAboutY = 150;
+
+       var cursorShake = {
+         el: _(".wrapIc"),
+         x:0,
+         y:0,
+         update: function(){
+           lx = this.x-0;
+           ly = this.y-0;
+           this.el.style = "transform: translate("+lx+"px, "+ly+"px)";
+         }
+       };
+
+       function move(){
+         cursorShake.x = clientAboutX - 75;
+         cursorShake.y = clientAboutY - 75;
+         cursorShake.update();
+         requestAnimationFrame(move);
+       }
 
        var latamRuleTx = new TypeIt("#latamRule", {
          strings: "<span class='highlight highBlueSky'>The LATAM Rulebook</span>",

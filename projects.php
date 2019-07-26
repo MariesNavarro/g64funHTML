@@ -14,6 +14,7 @@
 
       <section id="projectsCover" class="backImg backBottom">
         <span class="whiteTexture texture"></span>
+        <h1 id="h1Projects" class="highlight highPurpleDarkWhite"></h1>
     	</section>
 
       <section id="projectsGallery" class="backImg">
@@ -79,6 +80,7 @@
 </main>
     <script src="js/bowser.min.js" charset="utf-8"></script>
     <script src="js/ScrollMagic.min.js" charset="utf-8"></script>
+    <script src="js/typeit.min.js" charset="utf-8"></script>
     <script src="js/debug.addIndicators.js" charset="utf-8"></script>
     <script src="js/main-min.js" charset="utf-8"></script>
     <script src="js/backend.js" charset="utf-8"></script>
@@ -94,23 +96,23 @@
             img.setAttribute("class", "thumbnail trans5 greyscaleFull");
           }
         }
+
+        var projectsH1 = new TypeIt('#h1Projects', {
+          strings: 'Projects',
+          cursor: false,
+          speed: 60,
+          waitUntilVisible: true
+        });
+
+
         window.onload = function(){
+          projectsH1.go();
           var langMenu = _("#languageMenu");
           if(checkMobile){
               langMenu.style.display = "none";
           }
-          setTimeout(function(){
-             panicLoad();
-           },1000);
           wipesScroll();
-
-          ratioGallery("#sliderProject");
-          ratioGallery("#videoProject");
         }
-        window.onresize = function(){
-          ratioGallery("#sliderProject");
-          ratioGallery("#videoProject");
-        };
     </script>
   </body>
 </html>

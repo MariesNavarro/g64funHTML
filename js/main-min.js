@@ -215,21 +215,21 @@ function fadeScaleOutFlex(t,els){
 
 function contactLink(c){
   if(c === "nomenu"){
-    window.location.href = 'index.php#contactHome';
+    window.location.href = 'index.html#contactHome';
   } else {
     var butt = _("#menuBtt");
     menu('close', butt);
-    window.location.href = 'index.php#contactHome';
+    window.location.href = 'index.html#contactHome';
   }
 }
 
 function pressRoomOnMenu(c){
   if(c === "nomenu"){
-    window.location.href = 'about.php#pressRoomAbout';
+    window.location.href = 'about.html#pressRoomAbout';
   } else {
     var butt = _("#menuBtt");
     menu('close', butt);
-    window.location.href = 'about.php#pressRoomAbout';
+    window.location.href = 'about.html#pressRoomAbout';
   }
 }
 
@@ -280,16 +280,19 @@ function loadVideoAbout(){
     }
 }
 
-function preventAboutVideo(){
-
-}
-
 function ratioGallery(w){
-  var w = _(w),
-  widthW = w.offsetWidth,
-  newRatio = 580/1200,
-  newHeight = widthW * newRatio;
-  w.style.height = newHeight+"px";
+  var w = __(w);
+  for (var i = 0; i < w.length; i++) {
+    widthW = w[i].offsetWidth,
+    newRatio = 580/1200,
+    newHeight = widthW * newRatio;
+    if(checkMobile){
+      w[i].style.height = (newHeight+100)+"px";
+    } else {
+      w[i].style.height = newHeight+"px";
+    }
+
+  }
 }
 
 var s = 0;
@@ -477,28 +480,6 @@ function preventPointsAbout(){
 
 function lerp (start, end, amt){ return (1-amt)*start+amt*end }
 
-var clientAboutX = 150,
-    clientAboutY = 150;
-
-var cursorShake = {
-  el: _(".wrapIc"),
-  x:0,
-  y:0,
-  update: function(){
-    lx = this.x-0;
-    ly = this.y-0;
-    this.el.style = "transform: translate("+lx+"px, "+ly+"px)";
-  }
-};
-
-function move(){
-	cursorShake.x = clientAboutX - 75;
-	cursorShake.y = clientAboutY - 75;
-	cursorShake.update();
-	requestAnimationFrame(move);
-}
-
-
 function insideGallery(){
   var control = new ScrollMagic.Controller({globalSceneOptions: {duration: "110%", offset: -45}});
   new ScrollMagic.Scene({triggerElement: "#insideGallery", triggerHook: 'onLeave'})
@@ -516,7 +497,7 @@ function insideGallery(){
 }
 
 function projectsGallery(){
-  var control = new ScrollMagic.Controller({globalSceneOptions: {duration: "110%", offset: -45}});
+  var control = new ScrollMagic.Controller({globalSceneOptions: {duration: 0, offset: -45}});
   new ScrollMagic.Scene({triggerElement: "#projectsGallery", triggerHook: 'onLeave'})
   .addTo(control)
   .on("enter leave", function (e) {
@@ -533,4 +514,241 @@ function projectsGallery(){
 
 function overIcon(c, e, t){
   t.setAttribute('src', 'img/ic/' + e + c + '.svg');
+}
+
+
+function loadVidProject(elvid, srcvid, srcimg){
+  var playing = false,
+      vid = _(elvid),
+      src = srcvid,
+      parent = vid.parentElement,
+      mp4 = vid.canPlayType('video/mp4; codecs="avc1.42E01E"'),
+      webm = vid.canPlayType('video/webm; codecs="vp8, vorbis"');
+      vid.setAttribute("poster", srcimg);
+      vid.setAttribute("onclick", "playVideoProject(this)");
+      createCursor(parent);
+      var user = window.navigator.userAgent,
+          chrome = user.indexOf('Chrome'),
+          firefox = user.indexOf('Firefox'),
+          safari = user.indexOf('Safari'),
+          msie = user.indexOf('MSIE'),
+          opera = user.indexOf('Opera');
+          if(chrome > 1){
+            supportVideo();
+          } else if (firefox >= 0) {
+            supportVideo();
+          } else if(safari >= 0){
+            supportVideo();
+          } else if(msie >= 0){
+            supportVideo();
+          } else if (opera >= 0){
+            supportVideo();
+          }
+  function supportVideo(){
+    if(webm === "probably"){
+        return vid.setAttribute("src", src+".webm");
+    } else {
+      if(mp4 === "probably"){
+        return vid.setAttribute("src", src+".mp4");
+      }
+    }
+  }
+
+  function createCursor(){
+    var cursorWrap = document.createElement("DIV");
+    cursorWrap.setAttribute("class", "cursor");
+    cursorWrap.style.opacity = "0";
+    var playCursorWrap = document.createElement("DIV");
+    playCursorWrap.setAttribute("class", "play");
+    cursorWrap.appendChild(playCursorWrap);
+    var pauseCursorWrap = document.createElement("DIV");
+    pauseCursorWrap.setAttribute("class", "pause");
+    pauseCursorWrap.style.opacity = "0";
+    cursorWrap.appendChild(pauseCursorWrap);
+    for(var i = 0; i<2; i++){
+      var img = document.createElement("DIV");
+      if(i === 0){ img.setAttribute("class", "animateCircleText"); }
+      playCursorWrap.appendChild(img);
+    }
+    for(var i = 0; i<2; i++){
+      var img = document.createElement("DIV");
+      if(i === 0){ img.setAttribute("class", "animateCircleText"); }
+      pauseCursorWrap.appendChild(img);
+    }
+    parent.appendChild(cursorWrap);
+    parent.addEventListener("mouseenter", function(){
+      var cursor = this.children[1];
+      cursor.style.opacity = "1";
+      parent.addEventListener("mousemove", ev => cursorMove(ev, cursor));
+    });
+    parent.addEventListener("mouseleave", function(){
+      var cursor = this.children[1];
+      cursor.style.opacity = "0";
+    });
+  }
+
+  function cursorMove(ev, cursor) {
+    window.requestAnimationFrame(() => {
+      let posY = ev.clientY;
+      let posX = ev.clientX;
+      cursor.style.top = `${posY-50}px`;
+      cursor.style.left = `${posX-50}px`;
+    });
+  }
+}
+
+function playVideoProject(t){
+  var playIc = t.parentElement.children[1].children[0],
+      pauseIc = t.parentElement.children[1].children[1];
+  t.setAttribute("onclick", "pauseVideoProject(this)");
+  playIc.style.opacity = "0";
+  pauseIc.style.opacity = "1";
+  t.play();
+}
+
+function pauseVideoProject(t){
+  var playIc = t.parentElement.children[1].children[0],
+      pauseIc = t.parentElement.children[1].children[1];
+  t.setAttribute("onclick", "playVideoProject(this)");
+  playIc.style.opacity = "1";
+  pauseIc.style.opacity = "0";
+  t.pause();
+}
+
+function loadSliderProject(el, arrUrl){
+	var name = el,
+      sliderWR = _(el),
+      parent = sliderWR.parentElement,
+      maxSlider = -((arrUrl.length-1)*100);
+	sliderWR.setAttribute("class", "displayFlex");
+  sliderWR.setAttribute("data-max", maxSlider);
+  sliderWR.setAttribute("data-init", "0");
+
+  var interfaceWr = document.createElement("DIV");
+  interfaceWr.setAttribute("class", "interface displayFlex");
+  for(var i = 0; i<3; i++){
+    var interfaceButtons = document.createElement("DIV");
+    interfaceButtons.setAttribute("class", "interfaceButtons");
+    interfaceWr.appendChild(interfaceButtons);
+  }
+  parent.appendChild(interfaceWr);
+	for(var i = 0; i < arrUrl.length; i++){
+    var slide = document.createElement("LI");
+    slide.style.backgroundImage = "url("+arrUrl[i]+")";
+    sliderWR.appendChild(slide);
+	}
+  function setArrows(el){
+    var els = __(".interfaceButtons"),
+        parent = els[0].parentElement;
+    var aNext = document.createElement("A"),
+        imgNextTx = document.createElement("IMG"),
+        imgNextIc = document.createElement("IMG");
+    aNext.setAttribute("onclick", "sliderArrows('next', this, '"+el+"')");
+    imgNextTx.setAttribute("class", "animateCircleText");
+    imgNextTx.setAttribute("src", "img/ic/next-tx.svg");
+    imgNextIc.setAttribute("src", "img/ic/next-ic.svg");
+    imgNextIc.setAttribute("class", "trans5");
+    aNext.appendChild(imgNextTx);
+    aNext.appendChild(imgNextIc);
+    els[2].appendChild(aNext);
+
+    var aPrev = document.createElement("A"),
+        imgPrevTx = document.createElement("IMG"),
+        imgPrevIc = document.createElement("IMG");
+    aPrev.setAttribute("onclick", "sliderArrows('prev', this, '"+el+"')");
+    imgPrevTx.setAttribute("class", "animateCircleText");
+    imgPrevTx.setAttribute("src", "img/ic/prev-tx.svg");
+    imgPrevIc.setAttribute("src", "img/ic/prev-ic.svg");
+    imgPrevIc.setAttribute("class", "trans5");
+    aPrev.appendChild(imgPrevTx);
+    aPrev.appendChild(imgPrevIc);
+    els[0].appendChild(aPrev);
+  }
+  function setBullets(n){
+    var els = __(".interfaceButtons"),
+        parent = els[1];
+    for (var i = 0; i < n; i++) {
+      var aBullet = document.createElement("A"),
+          aCircle = document.createElement("IMG"),
+          aPoint = document.createElement("IMG");
+          aCircle.setAttribute("class", "circleBullet");
+          aPoint.setAttribute("class", "pointBullet");
+      aBullet.setAttribute("class", "bulletSlider");
+      aCircle.setAttribute("src", "img/ic/bullet-circle.svg");
+      aPoint.setAttribute("src", "img/ic/bullet-point.svg");
+      aPoint.setAttribute("class", "trans5");
+      aBullet.appendChild(aCircle);
+      aBullet.appendChild(aPoint);
+      parent.appendChild(aBullet);
+    }
+    initBullets(0);
+  }
+  setArrows(name);
+  setBullets(arrUrl.length);
+}
+
+function initBullets(c){
+  var els = __(".bulletSlider"),
+      circle = __(".circleBullet"),
+      point = __(".pointBullet");
+    switch (c) {
+      case 0:
+          circle[0].style.opacity = "1";
+          circle[1].style.opacity = "0";
+          circle[2].style.opacity = "0";
+        break;
+      case -100:
+        circle[0].style.opacity = "0";
+        circle[1].style.opacity = "1";
+        circle[2].style.opacity = "0";
+        break;
+      case -200:
+      circle[0].style.opacity = "0";
+      circle[1].style.opacity = "0";
+      circle[2].style.opacity = "1";
+        break;
+      default:
+      circle[0].style.opacity = "1";
+      circle[1].style.opacity = "0";
+      circle[2].style.opacity = "0";
+    }
+}
+
+function sliderArrows(c, t, ul){
+  var ul = _(ul),
+      cont = parseInt(ul.getAttribute("data-init")),
+      max = ul.getAttribute("data-max");
+  if(c === 'next'){
+    cont -= 100;
+    if(cont < -200){
+      cont = 0;
+    }
+    ul.setAttribute("data-init", cont);
+    initBullets(cont);
+    ul.style.left = cont+"%";
+  } else {
+    cont += 100;
+    if(cont > 0){
+      cont = -200;
+    }
+    ul.setAttribute("data-init", cont);
+    initBullets(cont);
+    ul.style.left = cont+"%";
+  }
+}
+
+function triggerServices(){
+  var control = new ScrollMagic.Controller({globalSceneOptions: {duration: 0, offset: -65}});
+  new ScrollMagic.Scene({triggerElement: "#servicesInfo", triggerHook: 'onLeave'})
+  .addTo(control)
+  .on("enter leave", function (e) {
+    if(e.type === "enter"){
+      changeColorMenu("purple");
+      isMenuPurple = true;
+    }
+    if(e.type === "leave"){
+      changeColorMenu("white");
+      isMenuPurple = false;
+    }
+  });
 }

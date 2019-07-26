@@ -11,6 +11,7 @@
 
 <section id="servicesCover" class="backImg">
   <span class="whiteTexture texture"></span>
+  <h1 id="servicesH1" class="highlight highGreenWhite"></h1>
 </section>
 <section id="servicesInfo" class="">
   <span class="blackTexture texture"></span>
@@ -44,20 +45,27 @@
     <script src="js/bowser.min.js" charset="utf-8"></script>
     <script src="js/ScrollMagic.min.js" charset="utf-8"></script>
     <script src="js/debug.addIndicators.js" charset="utf-8"></script>
+    <script src="js/typeit.min.js" charset="utf-8"></script>
     <script src="js/main-min.js" charset="utf-8"></script>
-    <script src="js/home-min.js" charset="utf-8"></script>
     <script src="js/backend.js" charset="utf-8"></script>
     <script>
-        loadSeq();
-        window.onload = function(){
-          var langMenu = _("#languageMenu");
-          if(checkMobile){
-              langMenu.style.display = "none";
-          }
-          setTimeout(function(){
-             panicLoad();
-           },1000);
+      triggerServices();
+      loadSeq();
+
+      var servicesH1 = new TypeIt('#servicesH1', {
+        strings: 'Services',
+        cursor: false,
+        speed: 60,
+        waitUntilVisible: true
+      });
+
+      window.onload = function(){
+        servicesH1.go();
+        var langMenu = _("#languageMenu");
+        if(checkMobile){
+            langMenu.style.display = "none";
         }
+      }
     </script>
   </body>
 </html>
