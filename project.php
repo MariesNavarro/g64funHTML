@@ -1,15 +1,18 @@
 <?php
-  $title = "Project| G64 Agency | LATAM";
-  $site = "https://g64.agency/project.php";
-  $background = "#FFF";
-?>
-<?php include 'header.php'; ?>
-<?php
+  require_once('backend/lib/db.php');
+  if (isset($_GET['lang'])) { $lang = $_GET['lang']; } else { $lang = 'EN'; /* por defecto en Ingles */}
+  if (isset($_GET['idpro'])) { $idproyecto = $_GET['idpro']; } else { $idproyecto = 1; /* por defecto proyecto 1 */}
   /* Obtener datos */
   $proyecto       =  getproyecto($lang,$idproyecto);
   $proyectoSlider =  getproyectoSlider($lang,$idproyecto);
   $proyectos      =  getproyectosExcluir($lang,$idproyecto);
 ?>
+<?php
+  $title = $proyecto['nombre']."|".$proyecto['cliente']."|G64 Agency";
+  $site = "https://g64.agency/project.php";
+  $background = "#FFF";
+?>
+<?php include 'header.php'; ?>
 </main>
 
   <div id="projectSectionWrap">
@@ -31,6 +34,14 @@
           </div>
         </div>
 
+        <!-- COVER -->
+        <?php if ($proyecto['tipo']=='V') {  // Si es video
+            echo "<div class=\"videoProject\"><video id=\"vidCover\"></video></div>";
+          } else {  // Imagen
+            echo "<div class=\"coverProject\"><div style=\"background-image:url('".$proyecto['url']."')\"></div></div>";
+          }
+       ?>
+        <!--
         <div id="sliderProject">
           <?php
             foreach ($proyectoSlider as $item) {
@@ -38,7 +49,6 @@
             }
           ?>
         </div>
-
         <div id="sliderInterface" class="displayFlex">
           <?php
             for( $i= 0 ; $i < sizeof($proyectoSlider) ; $i++ ) {
@@ -51,6 +61,7 @@
             }
           ?>
         </div>
+        -->
       </div> <!-- margin -->
     </div>
     <div class="projectSection panel">
@@ -62,9 +73,25 @@
             <p><?php echo $proyecto['resultado']; ?></p>
           </div>
         </div>
+        <!-- FOOT/CASE -->
+        <?php
+          if (sizeof($proyectoSlider) > 0) {
+            if (sizeof($proyectoSlider) == 0) {
+              if ($proyectoSlider[0]['tipo'] == 'V') {  // Video
+                echo "<div class=\"videoProject\"><video id=\"vidFoot\"></video></div>";
+              } else if  ($proyectoSlider[0]['tipo'] == 'I') {
+                echo "<div class=\"coverProject\"><div style=\"background-image:url('".$proyectoSlider[0]['url']."')\"></div></div>";
+              }
+           } else {  // Slider
+              echo "<div class=\"sliderProject\"><ul id=\"sliderProjectFoot\"></ul></div>";
+           }
+          }
+        ?>
+        <!--
         <div id="videoProject">
           <div style="background-image:url('<?php echo $proyecto['url']; ?>')"></div>
         </div>
+      -->
       </div>
     </div>
     <div id="insideGallery" class="panel">
@@ -87,7 +114,7 @@
     <script src="js/debug.addIndicators.js" charset="utf-8"></script>
     <script src="js/main-min.js" charset="utf-8"></script>
     <script>
-    changeColorMenu("purple");
+      changeColorMenu("purple");
       loadSeq();
       function projectThumb(c, t){
         var img = t.children[0];
@@ -100,6 +127,17 @@
       }
       window.onload = function(){
         var langMenu = _("#languageMenu");
+        var coverUrl = "<?php echo $proyecto['url']; ?>";
+        var footUrl = "<?php echo $proyectoSlider[0]['url']; ?>";
+        var coverType = "<?php echo $proyecto['tipo']; ?>";
+        var footType = "<?php echo $proyectoSlider[0]['tipo']; ?>";
+        var sliderFoot = "<?php echo sizeof($proyectoSlider); ?>";
+        var urlsSliderFoot = [<?php
+                                for ($i=0;$i<sizeof($proyectoSlider);$i++) {
+                                  echo '"'.$proyectoSlider[$i]['url'].'"';
+                                  if ($i<sizeof($proyectoSlider)-1) { echo ",";}
+                                }
+                              ?>];
         if(checkMobile){
             langMenu.style.display = "none";
         }
@@ -107,12 +145,29 @@
            panicLoad();
          },1000);
         wipesScroll();
+        ratioGallery(".videoProject");
+        ratioGallery(".coverProject");
+        ratioGallery(".sliderProject");
+
+        if (sliderFoot=="1") {
+           if (coverType=='V') { loadVidProject("#vidCover",coverUrl, coverUrl+"-poster.jpg");}
+           if (footType=='V') {loadVidProject("#vidFoot",footUrl, footUrl+"-poster.jpg");}
+        } else { // es un slider
+           loadSliderProject("#sliderProjectFoot", urlsSliderFoot);
+        }
+        /*
         ratioGallery("#sliderProject");
         ratioGallery("#videoProject");
+        */
       }
       window.onresize = function(){
-        ratioGallery("#sliderProject");
+        ratioGallery(".videoProject");
+        ratioGallery(".coverProject");
+        ratioGallery(".sliderProject");
+        /*
         ratioGallery("#videoProject");
+        ratioGallery("#sliderProject");
+        */
       };
     </script>
   </body>

@@ -73,6 +73,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body style="background:<?php echo $site = ""; ?>">
+    <?php include_once("analyticstracking.php") ?>
     <input type="hidden" id="lang" name="lang" value='<?php echo $lang; ?>'>
     <div id="loading" class="displayFlex trans5">
       <img src="img/logotipo-g64.gif" alt="Logotipo G64 animado" width="80" height="76">

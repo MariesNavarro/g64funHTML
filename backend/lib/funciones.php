@@ -25,7 +25,7 @@ function send_email($nombre, $email,$role,$comentario) {
 
     //echo $texto_mail;
 
-    $para  		="carlos.galvez@oetcapital.com";
+    $para  		="akeman@oetcapital.com";
     $de    		="info@g64.agency";   // email que envia
     $titulo   ='=?UTF-8?B?'.base64_encode("Nuevo contacto G64").'?=';
 
@@ -36,7 +36,7 @@ function send_email($nombre, $email,$role,$comentario) {
     $cabeceras .= 'From: G64 '. $de . "\r\n";
 
     // con copia oculta
-    //$cabeceras .= 'BCC: carlos.galvez@oetcapital.com';
+    $cabeceras .= 'BCC: carlos.galvez@oetcapital.com';
     //echo $para.' '.$titulo.' '. $cabeceras,'<br>';
     mail($para, utf8_decode($titulo), utf8_decode($texto_mail), $cabeceras);
     // fin envio email
