@@ -14,7 +14,7 @@
         <li><a href="about.php?lang=<?php echo $lang ?>"><?php echo __("About Us", $lang);?></a></li>
         <li><a href="services.php?lang=<?php echo $lang ?>"><?php echo __("Services", $lang);?></a></li>
         <li><a href="projects.php?lang=<?php echo $lang ?>"><?php echo __("Portfolio", $lang);?></a></li>
-        <li><a href="about.html#pressRoomAbout"><?php echo __("Press Room", $lang);?></a></li>
+        <li><a href="about.php#pressRoomAbout"><?php echo __("Press Room", $lang);?></a></li>
         <li><a role="button" onclick="contactLink('nomenu')"><?php echo __("Contact", $lang);?></a></li>
       </ul>
 

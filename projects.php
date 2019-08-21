@@ -112,6 +112,9 @@
               langMenu.style.display = "none";
           }
           wipesScroll();
+          setTimeout(function(){
+             panicLoad();
+           },1000);
         }
     </script>
   </body>

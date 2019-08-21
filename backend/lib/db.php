@@ -149,11 +149,13 @@ LEFT JOIN g64_proyectos_img d ON a.id = d.idproyecto
 LEFT JOIN g64_categorias e ON e.id = b.idcategoria
     WHERE b.idioma = '".$lang."'
       AND d.seccion = 'TH'
+      AND a.activo = 'S'
       AND a.activo = 'S'";
   if ($idcliente > 0) {  $consulta .="AND c.id =".$idcliente;  }
   if ($year > 0) {  $consulta .="AND a.year=".$year;  }
   if ($idcategoria > 0) {  $consulta .="AND b.idcategoria=".$idcategoria;  }
   $consulta .=" ORDER BY a.orden";
+  /* TH=thumbnail */
 
   if ($registros = mysqli_query($link, $consulta)) {
     while ($fila = mysqli_fetch_array($registros)) {
@@ -175,6 +177,7 @@ function getproyectosExcluir($lang,$idproyecto) {
       AND a.activo = 'S'
       AND a.idproyecto != $idproyecto
  ORDER BY a.idproyecto";
+ /* TH=thumbnail */
 
   if ($registros = mysqli_query($link, $consulta)) {
     while ($fila = mysqli_fetch_array($registros)) {
@@ -191,17 +194,18 @@ function getproyecto($lang,$idproyecto) {
 
   if ($idproyecto>0) {
       $link      = connect();
-      $consulta = "SELECT a.id,b.nombre, b.descripcion, b.resultado, a.year, e.nombre categoria, c.nombre cliente, d.url
+      $consulta = "SELECT a.id,b.nombre, b.descripcion, b.resultado, a.year, e.nombre categoria, c.nombre cliente, d.url, d.tipo
          FROM g64_proyectos a
     LEFT JOIN g64_proyectos_txt b ON a.id = b.idproyecto
     LEFT JOIN g64_clientes c ON a.idcliente = c.id
     LEFT JOIN g64_proyectos_img d ON a.id = d.idproyecto
     LEFT JOIN g64_categorias e ON e.id = b.idcategoria
         WHERE b.idioma = '".$lang."'
-          AND d.seccion = 'PO'
+          AND d.seccion = 'CO'
           AND a.id = ".$idproyecto."
           AND a.activo = 'S'
      ORDER BY a.orden";
+     /* CO=Cover */
 
       if ($registros = mysqli_query($link, $consulta)) {
         while ($fila = mysqli_fetch_array($registros)) {
@@ -218,12 +222,13 @@ function getproyectoSlider($lang,$idproyecto) {
 
   if ($idproyecto>0) {
       $link      = connect();
-      $consulta = "SELECT a.url
+      $consulta = "SELECT a.url, a.tipo
                    FROM g64_proyectos_img a
                   WHERE a.idproyecto = ".$idproyecto."
-                    AND a.seccion = 'SL'
+                    AND a.seccion = 'CA'
                     AND a.Activo = 'S'
                ORDER BY a.orden";
+              /* CA=Case */
 
       if ($registros = mysqli_query($link, $consulta)) {
         while ($fila = mysqli_fetch_array($registros)) {
