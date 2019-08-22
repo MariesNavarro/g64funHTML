@@ -159,7 +159,7 @@
           <p><?php echo __("We are always glad to receive <b>CV’s books and reels.</b>", $lang);?></p>
           <p><?php echo __("Get in contact with us through.", $lang);?></p>
           <h4>
-            <a href="openings.html"><?php echo __("See Our Openings", $lang);?></a>
+            <a href="openings.html"><?php echo __("See Our Job Openings", $lang);?></a>
             <span class="trans5"></span>
           </h4>
           <p><?php echo __("-OR-", $lang);?></p>

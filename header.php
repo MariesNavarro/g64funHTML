@@ -132,7 +132,7 @@
             </li>
             <li class="displayFlex menuLinkOff">
               <p>06</p>
-              <a href="openings.html" name="openings link"><h3><?php echo __("Openings", $lang);?></h3></a>
+              <a href="openings.html" name="openings link"><h3><?php echo __("Job Openings", $lang);?></h3></a>
             </li>
             <li class="displayFlex menuLinkOff">
               <p>07</p>
