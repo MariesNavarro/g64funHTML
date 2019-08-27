@@ -76,7 +76,7 @@
         <!-- FOOT/CASE -->
         <?php
           if (sizeof($proyectoSlider) > 0) {
-            if (sizeof($proyectoSlider) == 0) {
+            if (sizeof($proyectoSlider) == 1) {
               if ($proyectoSlider[0]['tipo'] == 'V') {  // Video
                 echo "<div class=\"videoProject\"><video id=\"vidFoot\"></video></div>";
               } else if  ($proyectoSlider[0]['tipo'] == 'I') {
