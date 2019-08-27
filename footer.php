@@ -44,7 +44,7 @@
       <ul>
         <h4><?php echo __("Contact", $lang);?></h4>
         <li>
-          <a href="openings.html">openings</a>
+          <a href="openings.html">Job Openings</a>
         </li>
         <li><a href="mailto:info@g64.agency">info@g64.agency</a></li>
         <li><a href="mailto:ventas@g64.agency">ventas@g64.agency</a></li>
