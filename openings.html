@@ -15,7 +15,7 @@ Date: 07-01
     <meta http-equiv="pragma" content="no-cache">
     <meta name="google" content="notranslate">
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=5.0000">
-    <title>Job Openings | G64 Agency | LATAM</title>
+    <title>Openings | G64 Agency | LATAM</title>
     <style>
       #loading{
         position: fixed;
@@ -57,6 +57,7 @@ Date: 07-01
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="img/fav/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/resetForm-min.css">
     <link rel="stylesheet" href="css/master-min.css">
     <link rel="stylesheet" href="css/sections-min.css">
   </head>
@@ -128,14 +129,175 @@ Date: 07-01
         </div>
       </div>
       <section id="openingsCover" class="backImg">
-        <h1 id="h1Openings" class="highlight">Job Openings</h1>
+        <h1 id="h1Openings" class="highlight">Openings</h1>
         <span class="whiteTexture texture"></span>
     	</section>
-      <section>
+      <section id="openingsContent">
         <span class="blackTexture texture"></span>
-
+        <div class="overTexture displayFlex">
+          <aside>
+            <h2>Our Job Offers</h2>
+            <ul>
+              <li class="listJobSelected displayFlex trans5">
+                <span class="listNumIndex displayFlex">01</span>
+                <span class="listContentIndex displayFlex">
+                  <p class="jobTitle"><b>Account Executive</b></p>
+                  <p class="listStateIndex stateSelected"><b>Close</b></p>
+                </span>
+              </li>
+              <li class="listJobNoneSelected displayFlex trans5">
+                <span class="listNumIndex displayFlex">02</span>
+                <span class="listContentIndex displayFlex">
+                  <p class="jobTitle"><b>Junior Designer</b></p>
+                  <p class="listStateIndex stateUnselected"><b>Close</b></p>
+                </span>
+              </li>
+            </ul>
+          </aside>
+          <select id="searchOnMobile" onchange="menuMobileJobs(this)">
+            <option value="0">Our Job Offers</option>
+            <option value="1">Account Executive</option>
+            <option value="2">Junior Designer</option>
+          </select>
+          <div class="wrContentOpenings">
+            <article data-opening="1">
+              <h2 id="titleJob">Account Executive</h2>
+              <p id="stateJob">
+                <b>Close</b>
+                -
+                <span>12 June 2019</span>
+              </p>
+              <h3>Summary</h3>
+              <p id="summaryJob">
+                The Account Executive is a link between the client
+                and the consultant. It is basically responsible for
+                the commercial management of the company, actively
+                prospecting the market and getting new customers in
+                addition to maintaining current ones.
+              </p>
+              <h3>Here’s the kind of stuff you’ll do</h3>
+              <ul>
+                <li>Cultivate relationships with clients</li>
+                <li>Planning and coordinating account activity</li>
+                <li>Coordinating media pitches</li>
+                <li>Coordinating photo shoots</li>
+              </ul>
+              <h3>Qualifications</h3>
+              <ul>
+                <li>You need at least 2 years of experience </li>
+                <li>Communicative effectiveness</li>
+                <li>Analytical capacity</li>
+                <li>Proactive and decisive attitude</li>
+              </ul>
+              <div class="wrBtnApplication displayFlex">
+                <a role="button" class="trans5" onclick="openForm('open')">Apply For This Job</a>
+                <a role="button" class="trans5">Send This To A Friend</a>
+              </div>
+            </article>
+            <div id="sendCvWr" class="displayFlex">
+                <label id="cvIcon" for="fileCVNormal">
+                  <div id="upCvTx"></div>
+                  <div id="upCvIc" class="trans5"></div>
+                </label>
+                <input id="fileCVNormal" type="file" name="uploadCVNormal">
+                <h5>
+                  Send us your CV and in case we have vacancies available we will contact you.
+                </h5>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer>
+<span class="whiteTexture texture"></span>
+<div class="marginWidth">
+<ul class="contactMobile">
+  <li><a href="mailto:info@g64.agency">info@g64.agency</a></li>
+  <li><a href="mailto:ventas@g64.agency">ventas@g64.agency</a></li>
+  <li><a href="mailto:talento@g64.agency">talento@g64.agency</a></li>
+</ul>
+<div class="infoColums">
+  <!-- 1 Columna Sitemap -->
+  <ul>
+    <h4>Sitemap</h4>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="about.html">About Us</a>
+    </li>
+    <li>
+      <a href="services.html">Services</a>
+    </li>
+    <li>
+      <a href="projects.html">Projects</a>
+    </li>
+    <li>
+      <a href="about.html#pressRoomAbout">Press Room</a>
+    </li>
+    <li>
+      <a href="index.html#contactHome">Contact</a>
+    </li>
+  </ul>
+
+  <!-- 2 Columna Follow Us -->
+  <ul>
+    <h4>Follow Us</h4>
+    <li>
+      <a href="https://www.instagram.com/g64.agency/" target="_blank">Instagram</a>
+    </li>
+    <li>
+      <a href="https://vimeo.com/user85719236" target="_blank">Vimeo</a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/pages/G64/1489576167830724" target="_blank">Facebook</a>
+    </li>
+    <li>
+      <a href="https://twitter.com/g64agency" target="_blank">Twitter</a>
+    </li>
+  </ul>
+
+  <!-- 3 Columna Our Family -->
+  <ul>
+    <h4>Our Family</h4>
+    <li>
+      <a href="https://www.tierragamer.com/" target="_blank">Tierra Gamer</a>
+    </li>
+    <li>
+      <a href="http://el3v3n.com/" target="_blank">Eleven Advertising</a>
+    </li>
+  </ul>
+
+  <!-- 4 Columna Policy -->
+  <ul>
+    <h4>Policy</h4>
+    <li>
+      <a href="assets/aviso-privacidad.pdf" target="_blank">Cookies and Privacy Policy</a>
+    </li>
+  </ul>
+
+  <!-- 5 Columna Policy -->
+  <ul>
+    <h4>Contact</h4>
+    <li>
+      <a href="openings.html">openings</a>
+    </li>
+    <li>
+      <a href="mailto:info@g64.agency">info@g64.agency</a>
+    </li>
+    <li>
+      <a href="mailto:ventas@g64.agency">ventas@g64.agency</a>
+    </li>
+    <li>
+      <a href="mailto:talento@g64.agency">talento@g64.agency</a>
+    </li>
+  </ul>
+</div>
+<p>
+  © 2019 All Rights Reserved
+</p>
+</div>
+</footer>
     <script src="js/bowser.min.js" charset="utf-8"></script>
     <script src="js/ScrollMagic.min.js" charset="utf-8"></script>
     <script src="js/debug.addIndicators.js" charset="utf-8"></script>
@@ -143,7 +305,33 @@ Date: 07-01
     <script src="js/main-min.js" charset="utf-8"></script>
     <script src="js/ani.js"></script>
     <script>
+      setDeskJob("#searchOnMobile");
       loadSeq();
+
+      window.onload = function(){
+        triggerOpenings();
+        var langMenu = _("#languageMenu");
+        if(checkMobile){
+            langMenu.style.display = "none";
+        }
+      }
+      function openForm(c){
+        console.log(c)
+      }
+      function setDeskJob(el){
+        var el = _(el),
+            tx = el.children[0].text.length,
+            margin = (tx*10)/2;
+        el.style.textIndent = "calc(50% - "+margin+"px)";
+      }
+      function menuMobileJobs(t){
+        var select = t,
+            i = select.selectedIndex,
+            options = select.options,
+            text = (options[i].text.length),
+            margin = (text*10)/2;
+            select.style.textIndent = "calc(50% - "+margin+"px)";
+      }
     </script>
   </body>
 </html>

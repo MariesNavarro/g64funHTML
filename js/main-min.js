@@ -215,21 +215,21 @@ function fadeScaleOutFlex(t,els){
 
 function contactLink(c){
   if(c === "nomenu"){
-    window.location.href = 'index.php#contactHome';
+    window.location.href = 'index.html#contactHome';
   } else {
     var butt = _("#menuBtt");
     menu('close', butt);
-    window.location.href = 'index.php#contactHome';
+    window.location.href = 'index.html#contactHome';
   }
 }
 
 function pressRoomOnMenu(c){
   if(c === "nomenu"){
-    window.location.href = 'about.php#pressRoomAbout';
+    window.location.href = 'about.html#pressRoomAbout';
   } else {
     var butt = _("#menuBtt");
     menu('close', butt);
-    window.location.href = 'about.php#pressRoomAbout';
+    window.location.href = 'about.html#pressRoomAbout';
   }
 }
 
@@ -740,6 +740,23 @@ function sliderArrows(c, t, ul){
 function triggerServices(){
   var control = new ScrollMagic.Controller({globalSceneOptions: {duration: 0, offset: -65}});
   new ScrollMagic.Scene({triggerElement: "#servicesInfo", triggerHook: 'onLeave'})
+  .addTo(control)
+  .on("enter leave", function (e) {
+    if(e.type === "enter"){
+      changeColorMenu("purple");
+      isMenuPurple = true;
+    }
+    if(e.type === "leave"){
+      changeColorMenu("white");
+      isMenuPurple = false;
+    }
+  });
+}
+
+
+function triggerOpenings(){
+  var control = new ScrollMagic.Controller({globalSceneOptions: {duration: 0, offset: -65}});
+  new ScrollMagic.Scene({triggerElement: "#openingsContent", triggerHook: 'onLeave'})
   .addTo(control)
   .on("enter leave", function (e) {
     if(e.type === "enter"){
