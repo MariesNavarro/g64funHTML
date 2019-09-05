@@ -192,8 +192,8 @@ Date: 07-01
                 <li>Proactive and decisive attitude</li>
               </ul>
               <div class="wrBtnApplication displayFlex">
-                <a role="button" class="trans5" onclick="openForm('open')">Apply For This Job</a>
-                <a role="button" class="trans5">Send This To A Friend</a>
+                <a href="form.html" class="trans5">Apply For This Job</a>
+                <a role="button" class="trans5" onclick="enterEmailPop('open')">Send This To A Friend</a>
               </div>
               <div class="wrBtnApplication displayFlex">
                 <a role="button" class="trans5">Share On Twitter</a>
@@ -214,6 +214,16 @@ Date: 07-01
         </div>
       </section>
     </main>
+    <div id="sendToAFriend" class="displayNone trans5">
+      <div class="displayFlex">
+        <a role="button" id="closeEnterEmail" class="trans5" onclick="enterEmailPop('close')">
+          <img src="img/ic/close.svg" width="15" height="15">
+        </a>
+        <p>Enter the email address</p>
+        <input type="text">
+        <a id="submitEnterEmail" role="button" class="trans5">Submit</a>
+      </div>
+    </div>
     <footer>
 <span class="whiteTexture texture"></span>
 <div class="marginWidth">

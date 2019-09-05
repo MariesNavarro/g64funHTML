@@ -1262,6 +1262,118 @@ section>.texture{
   background: none;
   color: #6D55D3;
 }
+#gobackToJob{
+  width: 100%;
+  height: 100px;
+  margin: 30px auto;
+}
+#gobackToJob>a{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+#gobackToJob>a>#txGoBack{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/ic/tx-goback.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-animation: rotateLoop 5s linear infinite;
+  -moz-animation: rotateLoop 5s linear infinite;
+  -ms-animation: rotateLoop 5s linear infinite;
+  -o-animation: rotateLoop 5s linear infinite;
+  animation: rotateLoop 5s linear infinite;
+}
+#gobackToJob>a>#icGoBack{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/ic/ic-goback.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#gobackToJob>a>#icGoBack:hover{
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+#sendToAFriend{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.95);
+  z-index: 8000;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0;
+}
+#sendToAFriend>div{
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+  margin-top: -150px;
+  background: #6D55D3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#sendToAFriend>div>p{
+  margin: 15px auto;
+}
+#sendToAFriend>div>#submitEnterEmail{
+  display: block;
+  background: #fff;
+  color: purple;
+  padding: 10px 15px;
+  margin: 15px auto;
+  border:1px solid #fff;
+}
+#sendToAFriend>div>#submitEnterEmail:hover{
+  border:1px solid #fff;
+  background: none;
+  color: #fff;
+}
+#sendToAFriend>div>#closeEnterEmail:hover{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#sendToAFriend>div>input{
+  width: 80%;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+}
 #sendCVOnForm{
   margin-top: 70px;
   width: 100%;

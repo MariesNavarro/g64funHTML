@@ -769,3 +769,19 @@ function triggerOpenings(){
     }
   });
 }
+
+function enterEmailPop(c){
+  var wr = _("#sendToAFriend");
+  if(c === 'open'){
+    wr.setAttribute("class", "displayFlex trans5");
+    setTimeout(function(){
+      wr.style.opacity = "1";
+    },500);
+  } else {
+    wr.style.opacity = "0";
+    setTimeout(function(){
+      wr.setAttribute("class", "displayNone trans5");
+    },500);
+
+  }
+}
