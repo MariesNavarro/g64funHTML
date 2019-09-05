@@ -960,7 +960,7 @@ section>.texture{
   margin:10px auto 30px auto;
 }
 .wrBtnApplication{
-  margin: 30px auto;
+  margin: 5px auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1118,7 +1118,7 @@ section>.texture{
   }
   .wrContentOpenings{
     width: calc(100% - 300px);
-    height: 850px;
+    height: 950px;
   }
   .wrBtnApplication{
     -webkit-box-orient: horizontal;
@@ -1170,6 +1170,25 @@ section>.texture{
   .wrContentOpenings>article>ul{ text-align: left; }
   .wrContentOpenings>article>ul>li{ padding-left: 40px }
 }
+#requiredFields{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  background: #6D55D3;
+  z-index: 800;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0;
+}
 #formPop{
   position: relative;
   width: 100vw;
@@ -1181,8 +1200,8 @@ section>.texture{
 #formPop>.texture{ opacity: 0.1; }
 #formPop>div{
   position: relative;
-  width: calc(100% - 60px);
-  left:calc(50% - (100vw - 60px)/2);
+  width: calc(100% - 80px);
+  left:calc(50% - (100vw - 80px)/2);
   background: none;
 }
 #formPop>div>h3{
@@ -1194,7 +1213,7 @@ section>.texture{
 }
 #formPop>div>#navForm{
   width: 100%;
-  height: 60px;
+  height: 80px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -1255,6 +1274,15 @@ section>.texture{
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+#sendCVOnForm>p{
+  color: #6D55D3;
+  margin: 10px auto;
 }
 #sendCVOnForm>label{
   position: relative;

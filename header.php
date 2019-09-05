@@ -88,6 +88,8 @@
             <a href="<?php echo $page?>?lang=ES" class="trans3 whiteColor" name="spanish"><span>ES</span> <span class="trans5"></span></a>
             <span class="trans3 whiteBack"></span>
             <a href="<?php echo $page?>?lang=PT" class="trans3 whiteColor" name="portuguese"><span>PT</span> <span class="trans5"></span></a>
+            <span class="trans3 whiteBack"></span>
+            <a href="<?php echo $page?>?lang=PT" class="trans3 whiteColor" name="chinese"><span>CH</span> <span class="trans5"></span></a>
           </div>
           <a role="button" id="menuBtt" class="displayFlex" onclick="menu('open', this)" name="menu">
             <span class="trans5 whiteBack"></span>

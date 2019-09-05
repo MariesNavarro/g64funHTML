@@ -62,6 +62,9 @@ Date: 07-01
     <link rel="stylesheet" href="css/sections-min.css">
   </head>
   <body>
+    <div id="requiredFields" class="displayNone trans5">
+      <p>Lo sentimos esta campo es requerido</p>
+    </div>
     <nav class="displayFlex">
       <a id="logoNav" class="whiteLogo" href="index.html" onmouseover="hoverAnimate()"></a>
       <div class="displayFlex">
@@ -71,6 +74,8 @@ Date: 07-01
           <a href="#" class="trans3 whiteColor"><span>ES</span> <span class="trans5"></span></a>
           <span class="trans3 whiteBack"></span>
           <a href="#" class="trans3 whiteColor"><span>PT</span> <span class="trans5"></span></a>
+          <span class="trans3 whiteBack"></span>
+          <a href="#" class="trans3 whiteColor"><span>CH</span> <span class="trans5"></span></a>
         </div>
         <a role="button" id="menuBtt" class="displayFlex" onclick="menu('open', this)">
           <span class="trans5 whiteBack"></span>
@@ -156,13 +161,20 @@ Date: 07-01
           <!-- ROW 3 -->
           <div class="rowPopForm displayFlex">
             <div>
-              <label for=""><b>Years of experience?</b></label>
+              <label for=""><b>Gender</b></label>
               <select class="" name="">
                 <option value="">Choose</option>
-                <option value="">1</option>
-                <option value="">2</option>
+                <option value="">Famale</option>
+                <option value="">Male</option>
               </select>
             </div>
+            <div>
+              <label for=""><b>Nationality</b></label>
+              <input type="text">
+            </div>
+          </div>
+          <!-- ROW 3.5 -->
+          <div class="rowPopForm displayFlex">
             <div>
               <label for=""><b>Do you speak english?</b></label>
               <select class="" name="">
@@ -171,11 +183,42 @@ Date: 07-01
                 <option value="">No</option>
               </select>
             </div>
+            <div>
+              <label for=""><b>English level?</b></label>
+              <select class="" name="">
+                <option value="">Choose</option>
+                <option value="">Elementary</option>
+                <option value="">Intermediate</option>
+                <option value="">Avanced</option>
+              </select>
+            </div>
+          </div>
+          <!-- ROW 3.8 -->
+          <div class="rowPopForm displayFlex">
+            <div>
+              <label for=""><b>Current employment situation?</b></label>
+              <select class="" name="">
+                <option value="">Choose</option>
+                <option value="">Employed</option>
+                <option value="">Unemployed</option>
+              </select>
+            </div>
+            <div>
+              <label for=""><b>Years of experience?</b></label>
+              <input type="text">
+            </div>
+          </div>
+          <!-- ROW 7 -->
+          <div class="rowPopForm1">
+            <div class="displayFlex">
+              <label for=""><b>Which was your last job?</b></label>
+              <input type="text">
+            </div>
           </div>
           <!-- ROW 4 -->
           <div class="rowPopForm1">
             <div class="displayFlex">
-              <label for=""><b>Which was your last job?</b></label>
+              <label for=""><b>LinkedIn profile url</b></label>
               <input type="text">
             </div>
           </div>
@@ -187,6 +230,7 @@ Date: 07-01
             </div>
           </div>
           <div id="sendCVOnForm" class="displayFlex">
+            <p>Please upload your CV on PDF</p>
             <label for="fileCVPop">
               <div id="textCvPop"></div>
               <div id="icCvPop" class="trans5"></div>
@@ -199,7 +243,7 @@ Date: 07-01
         </div>
       </div>
     </div>
-    <div id="popAnswer" class="displayNone"> 
+    <div id="popAnswer" class="displayNone">
       <div>
         <p id="answerMsgJob" >Sorry there was a problem and your message could not be sent</p>
         <a role="button" class="trans5" onclick="messageSubmitJob('close', 1)">Close</a>
@@ -277,7 +321,7 @@ Date: 07-01
   <ul>
     <h4>Contact</h4>
     <li>
-      <a href="openings.html">openings</a>
+      <a href="openings.html">Job Openings</a>
     </li>
     <li>
       <a href="mailto:info@g64.agency">info@g64.agency</a>
@@ -305,6 +349,21 @@ Date: 07-01
         var langMenu = _("#languageMenu");
         if(checkMobile){
             langMenu.style.display = "none";
+        }
+      }
+
+      function showRequired(c){
+        var wr = _("#requiredFields");
+        if(c === "open"){
+          wr.setAttribute("class", "displayFlex trans5");
+          setTimeout(function(){
+            wr.style.opacity = "1";
+          },800);
+        } else {
+          wr.style.opacity = "0";
+          setTimeout(function(){
+            wr.setAttribute("class", "displayNone trans5");
+          },800);
         }
       }
 
