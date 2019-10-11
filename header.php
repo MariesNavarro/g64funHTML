@@ -146,7 +146,7 @@
               <h4><?php echo __("Follow Us", $lang);?></h4>
               <a href="https://www.instagram.com/g64.agency/" target="_blank"> <img src="img/ic/instagram-out.svg" onmouseover="overIcon('over', 'instagram-', this)" onmouseout="overIcon('out', 'instagram-', this)" width="30" height="30"> </a>
               <a href="https://vimeo.com/user85719236" target="_blank"><img src="img/ic/vimeo-out.svg" onmouseover="overIcon('over', 'vimeo-', this)" onmouseout="overIcon('out', 'vimeo-', this)" width="30" height="30"></a>
-              <a href="https://www.facebook.com/pages/G64/1489576167830724" target="_blank"><img src="img/ic/facebook-out.svg" onmouseover="overIcon('over', 'facebook-', this)" onmouseout="overIcon('out', 'facebook-', this)" width="30" height="30"></a>
+              <a href="https://www.facebook.com/g64.agency" target="_blank"><img src="img/ic/facebook-out.svg" onmouseover="overIcon('over', 'facebook-', this)" onmouseout="overIcon('out', 'facebook-', this)" width="30" height="30"></a>
               <a href="https://twitter.com/g64agency" target="_blank"><img src="img/ic/twitter-out.svg" onmouseover="overIcon('over', 'twitter-', this)" onmouseout="overIcon('out', 'twitter-', this)" width="30" height="30"></a>
               <a href="" name="mail info g64"><b>info@g64.agency</b></a>
               <a href="" name="cookies and privacy policy" target="_blank"><span><?php echo __("Cookies and Privacy Policy", $lang);?></span></a>

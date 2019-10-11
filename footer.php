@@ -23,7 +23,7 @@
         <h4><?php echo __("Follow Us", $lang);?></h4>
         <li><a href="https://www.instagram.com/g64.agency/" target="_blank">Instagram</a></li>
         <li><a href="https://vimeo.com/user85719236" target="_blank">Vimeo</a></li>
-        <li><a href="https://www.facebook.com/pages/G64/1489576167830724" target="_blank">Facebook</a></li>
+        <li><a href="https://www.facebook.com/g64.agency" target="_blank">Facebook</a></li>
         <li><a href="https://twitter.com/g64agency" target="_blank">Twitter</a></li>
       </ul>
 
